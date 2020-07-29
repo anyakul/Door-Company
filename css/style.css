@@ -40,7 +40,7 @@
   overflow: hidden; }
 
 body {
-  font-family: "Roboto Condensed", Arial, sens-serif; }
+  font-family: "Roboto Condensed", "Arial", "sens-serif"; }
 
 .row {
   margin: 0; }
@@ -100,6 +100,13 @@ body {
           -ms-flex-pack: justify;
               justify-content: space-between;
       padding: 30px 5%; } }
+  @media (max-width: 768px) {
+    .header__logo-link {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      text-align: center; } }
 
 .header__logo-image {
   margin-bottom: 35px; }
@@ -247,7 +254,7 @@ body {
       font-size: 30px; } }
 
 .header__menu {
-  background-color: #007dC1;
+  background-color: #007dc1;
   width: 50%;
   margin-top: -235px;
   height: 390px;
@@ -362,7 +369,7 @@ body {
       -ms-flex-direction: row;
           flex-direction: row; }
   .popular-goods__item:nth-child(1), .popular-goods__item:nth-child(3n), .popular-goods__item:nth-child(4n) {
-    height: 400px; }
+    height: 460px; }
     .popular-goods__item:nth-child(1) .popular-goods__item-text, .popular-goods__item:nth-child(3n) .popular-goods__item-text, .popular-goods__item:nth-child(4n) .popular-goods__item-text {
       margin-top: auto;
       margin-bottom: 55px; }
@@ -397,7 +404,7 @@ body {
   line-height: 37px; }
 
 .popular-goods__item-old-price {
-  color: #007dC1;
+  color: #007dc1;
   text-decoration: line-through; }
 
 .popular-goods__button {
@@ -479,7 +486,7 @@ body {
       font-size: 30px; } }
 
 .about-company__text-wrapper {
-  width: 79%; }
+  width: 67%; }
   @media (max-width: 1199px) {
     .about-company__text-wrapper {
       width: 100%; } }
@@ -578,7 +585,7 @@ body {
 
 .footer__menu-copyright {
   width: 90%;
-  background-color: #007dC1;
+  background-color: #007dc1;
   padding-left: 5%;
   padding-top: 153px; }
   @media (max-width: 1199px) {
@@ -605,6 +612,10 @@ body {
 .footer__menu-item,
 .footer__copyright-item {
   margin-bottom: 20px; }
+  @media (max-width: 768px) {
+    .footer__menu-item,
+    .footer__copyright-item {
+      text-align: center; } }
   .footer__menu-item a,
   .footer__copyright-item a {
     color: #ffffff;
