@@ -34,17 +34,11 @@
   @include cancel-list;
   margin-left: 5%;
   justify-content: space-between;
+  overflow: scroll;
+  flex-wrap: nowrap;
 
   @media (max-width: $tablet-width) {
     margin-left: 0;
-  }
-}
-
-.ready-sets__item {
-  width: 40%;
-
-  &:last-child {
-    max-width: 10%;
   }
 }
 

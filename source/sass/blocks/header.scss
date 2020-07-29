@@ -3,15 +3,11 @@
 }
 
 .header__logo-promo-menu {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  margin-left: 5%;
+  padding-left: 5%;
 
   @media (max-width: $tablet-width) {
     flex-direction: column;
-    margin-left: 0;
-    width: 100%;
+    padding-left: 0;
   }
 }
 
@@ -27,16 +23,17 @@
 .header__logo-link {
   display: flex;
   flex-direction: column;
-  width: 30%;
   color: $black-color;
   padding-top: 85px;
+  align-items: center;
+  text-align: left;
 
   @media (max-width: $tablet-width) {
     flex-direction: row;
-    width: 100%;
     align-items: center;
     justify-content: space-between;
     padding: 30px 5%;
+    order: 1;
   }
 
   @media (max-width: $mobile-width) {
@@ -67,13 +64,12 @@
   background-image: url("../img/door-handle@1x.png");
   background-size: cover;
   background-repeat: no-repeat;
-  width: 70%;
   padding: 47px 5% 80px 5%;
   margin-right: 0;
 
   @media (max-width: $tablet-width) {
     padding: 47px 0 80px 0;
-    width: 100%;
+    order: 3;
   }
 }
 
@@ -132,7 +128,7 @@
   }
 }
 
-.header__cart {
+.header__promo-cart {
   width: 30px;
   height: 30px;
   margin-right: 5%;
@@ -142,44 +138,48 @@
   }
 }
 
-.header__text-item-button {
-  width: 55%;
-  margin-left: auto;
-
-  @media (max-width: $tablet-width) {
-    width: 100%;
-  }
-}
-
-.header__text-button {
+.header__promo-text-button {
   background-color: transparent;
   border: none;
+  margin-left: auto;
 
   svg {
     color: $white-color;
   }
 }
 
-.header__text-item {
+.header__promo-text-item {
   @include section-header;
   color: $white-color;
   padding-top: 320px;
+
+  @media (max-width: $tablet-width) {
+    padding-top: 200px;
+  }
+}
+
+.header__promo-text-item-button {
+  margin-left: auto;
 }
 
 .header__menu {
   background-color: $blue-color;
-  width: 50%;
   margin-top: -235px;
   height: 390px;
   flex-wrap: wrap;
 
-  @media (max-width: $tablet-width) {
-    padding: 47px 0 80px 0;
-    width: 100%;
+  &--inner-page {
+    margin-top: 0;;
+    background-color: $white-color;
+    height: auto;
   }
 
   @media (max-width: $tablet-width) {
-    width: 100%;
+    padding: 47px 0 80px 0;
+    order: 2;
+  }
+
+  @media (max-width: $tablet-width) {
     margin-left: 0;
     margin-top: 0;
     height: auto;
@@ -220,15 +220,25 @@
       font-size: 30px;
     }
   }
+
+  &--inner-page {
+    margin-top: 0;
+    width: 70%;
+
+    a {
+      color: $black-color;
+      font-size: 14px;
+      line-height: 16px;
+    }
+  }
 }
 
 .header__info {
-  margin-left: 5%;
-  width: 40%;
+  padding-left: 1%;
   padding-top: 50px;
 
   @media (max-width: $tablet-width) {
-    width: 95%;
+    order: 4;
   }
 }
 
@@ -241,7 +251,6 @@
   @include section-header;
 
   @media (max-width: $tablet-width) {
-    width: 100%;
     padding: 0 3%;
   }
 }

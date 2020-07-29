@@ -58,7 +58,7 @@
 }
 
 .about-company__text-wrapper {
-  width: 67%;
+  width: 73%;
 
   @media (max-width: $tablet-width) {
     width: 100%;
@@ -78,14 +78,12 @@
 
 .about-company__image {
   margin-bottom: -100px;
-  margin-left: -24%;
+  margin-left: -17%;
   position: relative;
   z-index: 20;
-  max-width: 49%;
 
   @media (max-width: $tablet-width) {
     margin-left: 0;
     margin-bottom: 0;
-    max-width: 100%;
   }
 }
