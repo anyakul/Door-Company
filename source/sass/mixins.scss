@@ -1,0 +1,50 @@
+@mixin background-section {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@mixin section {
+  padding: 100px 0;
+
+  @media (max-width: $tablet-width) {
+    padding: 40px 0;
+  }
+}
+
+@mixin section-header {
+  font-size: 48px;
+  line-height: 56px;
+  text-transform: uppercase;
+
+  @media (max-width: $tablet-width) {
+    font-size: 30px;
+  }
+}
+
+@mixin cancel-list {
+  list-style: none;
+}
+
+@mixin white-link {
+  color: $white-color;
+
+  &:hover {
+    color: #f8f8f8;
+  }
+
+  &:active {
+    color: #e8e8e8;
+  }
+}
+
+@mixin dark-link {
+  color: $black-color;
+
+  &:hover {
+    color: #505050;
+  }
+
+  &:active {
+    color: #696969;
+  }
+}

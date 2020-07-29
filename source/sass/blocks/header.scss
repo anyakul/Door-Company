@@ -1,0 +1,246 @@
+.header {
+  margin-bottom: 130px;
+}
+
+.header__logo-promo-menu {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-left: 5%;
+
+  @media (max-width: $tablet-width) {
+    flex-direction: column;
+    margin-left: 0;
+    width: 100%;
+  }
+}
+
+.header__logo-header {
+  font-size: 24px;
+  line-height: 26px;
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 0;
+  }
+}
+
+.header__logo-link {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  color: $black-color;
+  padding-top: 85px;
+
+  @media (max-width: $tablet-width) {
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 5%;
+  }
+}
+
+.header__logo-image {
+  margin-bottom: 35px;
+
+  @media (max-width: $tablet-width) {
+    margin-right: 20px;
+    margin-bottom: 0;
+  }
+}
+
+
+.header__logo-text {
+  font-size: 16px;
+
+  @media (max-width: $tablet-width) {
+    margin-right: 20px;
+  }
+}
+
+.header__promo {
+  background-image: url("../img/door-handle@1x.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 70%;
+  padding: 47px 5% 80px 5%;
+  margin-right: 0;
+
+  @media (max-width: $tablet-width) {
+    padding: 47px 0 80px 0;
+    width: 100%;
+  }
+}
+
+.header__promo-wrapper {
+  @media (max-width: $tablet-width) {
+    padding: 0 3%;
+  }
+}
+
+.header__promo-row {
+  justify-content: space-between;
+}
+
+.header__promo-search-form-input {
+  background-color: transparent;
+  border: 1px solid $white-color;
+  color: $white-color;
+  width: 400px;
+  font-size: 14px;
+  border-right: none;
+
+  &::placeholder {
+    @include white-link;
+    color: $white-color;
+    padding: 11px 25px;
+  }
+}
+
+.header__promo-search-form {
+  display: flex;
+  flex-direction: row;
+  vertical-align: top;
+  height: 33px;
+  margin-right: auto;
+}
+
+.header__promo-search-form-button {
+  background-color: transparent;
+  width: 30px;
+  position: relative;
+  height: 35px;
+  border: 1px solid $white-color;
+  border-left: none;
+
+  svg {
+    @include white-link;
+    color: $white-color;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+  }
+}
+
+.header__cart {
+  width: 30px;
+  height: 30px;
+  margin-right: 5%;
+
+  svg {
+    color: $white-color;
+  }
+}
+
+.header__text-item-button {
+  width: 55%;
+  margin-left: auto;
+
+  @media (max-width: $tablet-width) {
+    width: 100%;
+  }
+}
+
+.header__text-button {
+  background-color: transparent;
+  border: none;
+
+  svg {
+    color: $white-color;
+  }
+}
+
+.header__text-item {
+  @include section-header;
+  color: $white-color;
+  padding-top: 320px;
+}
+
+.header__menu {
+  background-color: $blue-color;
+  width: 50%;
+  margin-top: -235px;
+  height: 390px;
+  flex-wrap: wrap;
+
+  @media (max-width: $tablet-width) {
+    padding: 47px 0 80px 0;
+    width: 100%;
+  }
+
+  @media (max-width: $tablet-width) {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 0;
+    height: auto;
+    padding-bottom: 30px;
+  }
+}
+
+
+.header__menu-list {
+  @include cancel-list;
+  padding-top: 80px;
+  padding-bottom: 90px;
+  padding-right: 80px;
+  padding-left: 80px;
+
+  @media (max-width: $tablet-width) {
+    padding: 20px;
+    text-align: center;
+    flex-wrap: wrap;
+  }
+
+  .w-100 {
+    @media (max-width: $tablet-width) {
+      display: none;
+    }
+  }
+}
+
+.header__menu-item {
+  margin-bottom: 40px;
+
+  a {
+    @include white-link;
+    color: $white-color;
+    font-size: 20px;
+
+    @media (max-width: $tablet-width) {
+      font-size: 30px;
+    }
+  }
+}
+
+.header__info {
+  margin-left: 5%;
+  width: 40%;
+  padding-top: 50px;
+
+  @media (max-width: $tablet-width) {
+    width: 95%;
+  }
+}
+
+
+.header__info-list {
+  @include cancel-list;
+}
+
+.header__info-item-header {
+  @include section-header;
+
+  @media (max-width: $tablet-width) {
+    width: 100%;
+    padding: 0 3%;
+  }
+}
+
+.header__info-item-text {
+  font-size: 20px;
+  line-height: 26px;
+  text-transform: uppercase;
+}
