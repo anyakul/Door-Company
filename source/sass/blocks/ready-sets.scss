@@ -1,6 +1,10 @@
 .ready-sets {
   margin-left: 5%;
-  margin-bottom: 50px;
+  margin-bottom: 100px;
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 50px;
+  }
 }
 
 .ready-sets__header {
