@@ -409,10 +409,15 @@ body {
 
 .popular-goods__button {
   color: #000000;
+  color: #000000;
   font-size: 48px;
   line-height: 56px;
   text-transform: uppercase;
   margin-bottom: 100px; }
+  .popular-goods__button:hover {
+    color: #505050; }
+  .popular-goods__button:active {
+    color: #696969; }
   .popular-goods__button:hover {
     color: #505050; }
   .popular-goods__button:active {
@@ -514,7 +519,10 @@ body {
 
 .ready-sets {
   margin-left: 5%;
-  margin-bottom: 50px; }
+  margin-bottom: 100px; }
+  @media (max-width: 1199px) {
+    .ready-sets {
+      margin-bottom: 50px; } }
 
 .ready-sets__header {
   font-size: 48px;
