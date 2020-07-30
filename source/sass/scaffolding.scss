@@ -17,9 +17,29 @@
 }
 
 body {
-  font-family: "Roboto Condensed", "Arial", "sens-serif";
+  font-family: "Robotocondensed", "Arial", "sens-serif";
 }
 
 .row {
   margin: 0;
+}
+
+.main-inner-page__breadcrumbs-catalog {
+  padding: 0 2%;
+}
+
+@font-face {
+  font-family: "Robotocondensed";
+  src: url("../fonts/Robotocondensed.woff2") format("woff2"), url("../fonts/Robotocondensed.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  src: url("../fonts/ptsansbold.woff2") format("woff2"), url("../fonts/ptsansbold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
 }

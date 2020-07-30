@@ -12,28 +12,38 @@
   <header class="header">
     <section class="header__logo-promo-menu row">
       <a class="header__logo-link col-xl-4 col-lg-12" href="index.html">
-        <img class="header__logo-image" width="88" height="81" src="img/logo.png" alt="logo">
+        <img class="header__logo-image col-3" width="88" height="81" src="img/logo.png" alt="logo">
         <p class="header__logo-header">Белгородская дверная компания</p>
         <span class="header__logo-text">Официальный интернет-магазин производства</span>
       </a>
+      <a class="header__cart col-12 col-md-1" href="#">
+        <svg width="29" height="25">
+          <use xlink:href="img/sprite.svg#cart"></use>
+        </svg>
+      </a>
+      <a class="header__search col-12 col-md-1" href="#">
+        <svg width="16" height="16">
+          <use xlink:href="img/sprite.svg#search"></use>
+        </svg>
+      </a>
       <div class="header__promo col-xl-8 col-lg-12">
         <div class="header__promo-wrapper">
-          <div class="header__promo-row row">
-            <form class="header__promo-search-form col-8">
+          <div class="header__promo-row row row-cols-2">
+            <form class="header__promo-search-form col-12 col-md-8">
               <input class="header__promo-search-form-input" type="text" placeholder="Поиск">
               <button class="header__promo-search-form-button">
-                <svg width="16" height="16">
+                <svg>
                   <use xlink:href="img/sprite.svg#search"></use>
                 </svg>
               </button>
             </form>
-            <a class="header__promo-cart col-1" href="#">
+            <a class="header__promo-cart col-12 col-md-1" href="#">
               <svg width="29" height="25">
                 <use xlink:href="img/sprite.svg#cart"></use>
               </svg>
             </a>
             <div class="w-100"></div>
-            <div class="header__promo-text-item-button col-xl-7 col-lg-12">
+            <div class="header__promo-text-item-button col-xl-7 col-md-12 col-12">
               <p class="header__promo-text-item">Новинка! Фурнитура bravo</p>
               <button class="header__promo-text-button">
                 <svg width="154" height="16">
@@ -44,33 +54,39 @@
           </div>
         </div>
       </div>
-      <div class="header__menu col-xl-6 col-lg-12">
-        <ul class="header__menu-list row row-cols-1 row-cols-xl-2 row-cols-md-2 row-cols-sm-1 row-cols-xs-1">
-          <li class="header__menu-item col12">
+      <button class="header__toggle" type="button">
+        <svg width="40" height="20">
+          <use xlink:href="img/sprite.svg#menu"></use>
+        </svg>
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+      <div class="header__menu header__menu--no-js header__menu--closed col col-xl-6 col-lg-12">
+        <ul class="header__menu-list row row-cols-1 row-cols-lg-2">
+          <li class="header__menu-item col col12">
             <a href="#">Межкомнатные двери</a>
           </li>
-          <li class="header__menu-item col12">
+          <li class="header__menu-item col col12">
             <a href="#">Арки и порталы</a>
           </li>
-          <li class="header__menu-item col12">
+          <li class="header__menu-item col col12">
             <a href="#">Входные двери</a>
           </li>
-          <li class="header__menu-item col12">
+          <li class="header__menu-item col col12">
             <a href="#">Фурнитура</a>
           </li>
-          <li class="header__menu-item col12">
+          <li class="header__menu-item col col12">
             <a href="#">Раздвижные двери</a>
           </li>
-          <li class="header__menu-item col12">
+          <li class="header__menu-item col col12">
             <a href="#">Специальные двери</a>
           </li>
-          <li class="header__menu-item col12">
+          <li class="header__menu-item col col12">
             <a href="#">Складные двери</a>
           </li>
         </ul>
       </div>
       <div class="header__info col-xl-6 col-lg-12">
-        <ul class="header__info-list row">
+        <ul class="header__info-list row row-cols-1 row-cols-md-2">
           <li class="header__info-item col">
             <p class="header__info-item-header">215+</p>
             <p class="header__info-item-text">Видов дверей в нашем каталоге</p>
@@ -85,52 +101,52 @@
   </header>
   <main>
   <section class="popular-goods">
-      <h2 class="popular-goods__header">Популярные модели</h2>
-      <ul class="popular-goods__list row row-cols-1 row-cols-xl-3 row-cols-lg-2 row-cols-md-1 row-cols-sm-1 row-cols-xs-1">
-        <li class="popular-goods__item col align-self-start">
-          <img class="popular-goods__item-image" src="img/white-door.png" alt="Межкомнатные двери">
-          <div class="popular-goods__item-text">
+      <h2 class="popular-goods__header col">Популярные модели</h2>
+      <ul class="popular-goods__list row row-cols-2 row-cols-xl-3 row-cols-md-2">
+        <li class="popular-goods__item col align-self-start row">
+          <img class="popular-goods__item-image col col-4" src="img/white-door.png" alt="Межкомнатные двери">
+          <div class="popular-goods__item-text col col-7">
             <p class="popular-goods__item-header">Межкомнатные двери</p>
             <p class="popular-goods__item-text-item">Порта - 29</p>
             <p class="popular-goods__item-price">2 790 .—</p>
           </div>
         </li>
-        <li class="popular-goods__item col align-self-end">
-          <img class="popular-goods__item-image" src="img/white-door.png" alt="Межкомнатные двери">
-          <div class="popular-goods__item-text">
+        <li class="popular-goods__item col align-self-end row">
+          <img class="popular-goods__item-image col col-4" src="img/white-door.png" alt="Межкомнатные двери">
+          <div class="popular-goods__item-text col col-7">
             <p class="popular-goods__item-header">Межкомнатные двери</p>
             <p class="popular-goods__item-text-item">Порта - 29</p>
             <p class="popular-goods__item-price">2 790 .—</p>
           </div>
         </li>
-        <li class="popular-goods__item col align-self-start">
-          <img class="popular-goods__item-image" src="img/grey-door.png" alt="Межкомнатные двери">
-          <div class="popular-goods__item-text">
+        <li class="popular-goods__item col align-self-start row">
+          <img class="popular-goods__item-image col col-4" src="img/grey-door.png" alt="Межкомнатные двери">
+          <div class="popular-goods__item-text col col-7">
             <p class="popular-goods__item-header">Межкомнатные двери</p>
             <p class="popular-goods__item-text-item">Порта - 29</p>
             <p class="popular-goods__item-price">3 640 .—</p>
           </div>
         </li>
-        <li class="popular-goods__item col align-self-start">
-          <img class="popular-goods__item-image" src="img/dark-grey-door.png" alt="Межкомнатные двери">
-          <div class="popular-goods__item-text">
+        <li class="popular-goods__item col align-self-start row">
+          <img class="popular-goods__item-image col-4" src="img/dark-grey-door.png" alt="Межкомнатные двери">
+          <div class="popular-goods__item-text col col-7">
             <p class="popular-goods__item-header">Межкомнатные двери</p>
             <p class="popular-goods__item-text-item">Порта - 29</p>
             <p class="popular-goods__item-old-price">5 770</p>
             <p class="popular-goods__item-price">4 320 .—</p>
           </div>
         </li>
-        <li class="popular-goods__item col align-self-end">
-          <img class="popular-goods__item-image" src="img/dark-grey-door.png" alt="Межкомнатные двери">
-          <div class="popular-goods__item-text">
+        <li class="popular-goods__item col align-self-end row">
+          <img class="popular-goods__item-image col col-4" src="img/dark-grey-door.png" alt="Межкомнатные двери">
+          <div class="popular-goods__item-text col col-7">
             <p class="popular-goods__item-header">Межкомнатные двери</p>
             <p class="popular-goods__item-text-item">Порта - 29</p>
             <p class="popular-goods__item-price">4 320 .—</p>
           </div>
         </li>
-        <li class="popular-goods__item col align-self-start">
-          <img class="popular-goods__item-image" src="img/orange-door.png" alt="Межкомнатные двери">
-          <div class="popular-goods__item-text">
+        <li class="popular-goods__item col align-self-start row">
+          <img class="popular-goods__item-image col col-4" src="img/orange-door.png" alt="Межкомнатные двери">
+          <div class="popular-goods__item-text col col-7">
             <p class="popular-goods__item-header">Межкомнатные двери</p>
             <p class="popular-goods__item-text-item">Порта - 29</p>
             <p class="popular-goods__item-old-price">5 770</p>
@@ -138,7 +154,7 @@
           </div>
         </li>
       </ul>
-      <a class="popular-goods__button" href="catalog.html">Посмотреть весь каталог
+      <a class="popular-goods__button col" href="catalog.html">Посмотреть весь каталог
         <svg width="154" height="16">
           <use xlink:href="img/sprite.svg#arrow"></use>
         </svg>
@@ -147,7 +163,7 @@
     <section class="about-company row">
       <div class="about-company__row row row-cols-lg-1 row-cols-xs-1">
         <div class="about-company__text col-xl-10 align-self-start">
-          <div class="about-company__text-wrapper">
+          <div class="about-company__text-wrapper col">
             <h2 class="about-company__header">О компании</h2>
             <p class="about-company__text-item">Наша компания начала оптовые поставки межкомнатных дверей для комплектации строительных объектов еще в 2005 году.</p>
             <p class="about-company__text-item">За это время наши сотрудники накопили огромный опыт в комплектации объектов дверями и дверными блоками, компания установила плодотворное сотрудничество с целым рядом строительных компаний, что позволяет поставлять двери непосредственно застройщику. Нас не пугают заказы на производство дверей с нестандартными решениями.</p>
@@ -167,9 +183,9 @@
       </div>
     </section>
     <section class="ready-sets">
-      <h2 class="ready-sets__header">Готовые комплекты</h2>
-      <p class="ready-sets__sub-header">Входные двери + межкомнатные</p>
-      <p class="ready-sets__text">Мы производим серии дверей в едином дизайне - входные дверь и межкомнатные. Наша компания начала оптовые поставки межкомнатных дверей для комплектации строительных объектов еще в 2005 году.</p>
+      <h2 class="ready-sets__header col">Готовые комплекты</h2>
+      <p class="ready-sets__sub-header col">Входные двери + межкомнатные</p>
+      <p class="ready-sets__text col">Мы производим серии дверей в едином дизайне - входные дверь и межкомнатные. Наша компания начала оптовые поставки межкомнатных дверей для комплектации строительных объектов еще в 2005 году.</p>
       <ul class="ready-sets__list row">
         <li class="ready-sets__item col-5">
           <img class="ready-sets__item-image" src="img/snegir-home.png" alt="snegir home">
@@ -247,5 +263,6 @@
       </button>
     </div>
   </footer>
+  <script src="js/header-menu.js"></script>
 </body>
 </html>

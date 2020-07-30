@@ -1,0 +1,53 @@
+.filter {
+  position: relative;
+  width: 600px;
+
+
+    &::before {
+      @media (min-width: $desktop-width) {
+        content: "";
+        right: 0;
+        top: -400px;
+        width: 100%;
+        height: 120%;
+        position: absolute;
+        background-color: $beige-color;
+        z-index: -1;
+      }
+    }
+}
+
+.filter__wrapper {
+  margin-right: 5%;
+}
+
+
+
+.filter__form-group-legend {
+  font-size: 20px;
+  line-height: 23px;
+}
+
+
+.filter__form-group-list {
+  @include cancel-list;
+}
+
+
+.filter__form-group-list {
+  @include cancel-list;
+}
+
+.filter__form-item-label-size {
+  width: 113px;
+  border: 1px solid $blue-color;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  padding: 15px;
+}
+
+.filter__form-item-input-size::checked + label {
+  color: $white-color;
+  background-color: 1px solid $blue-color;
+}

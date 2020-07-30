@@ -10,47 +10,54 @@
 </head>
 <body>
 <header class="header">
-    <section class="header__logo-promo-menu row">
-      <a class="header__logo-link col-4 row" href="index.html">
-        <img class="header__logo-image col-3" width="40" height="81" src="img/logo.png" alt="logo">
-        <div class="header__logo-text-item col-9">
-          <p class="header__logo-header">Белгородская дверная компания</p>
-          <span class="header__logo-text">Официальный интернет-магазин производства</span>
+    <section class="header__logo-promo-menu header__logo-promo-menu--inner-page row row-cols-1 row-cols-md-1">
+      <a class="header__logo-link header__logo-link--inner-page  col col-xl-3 row" href="index.html">
+        <img class="header__logo-image col-xl-4 col-lg-2 col-2" width="40" height="81" src="img/logo.png" alt="logo">
+        <div class="header__logo-text-item col-xl-8 col-lg-12">
+          <p class="header__logo-header header__logo-header--inner-page">Белгородская дверная компания</p>
+          <span class="header__logo-text header__logo-text--inner-page">Официальный интернет-магазин производства</span>
         </div>
       </a>
-      <div class="header__menu header__menu--inner-page col-8 row">
-        <ul class="header__menu-list row row-cols-7 col-10">
-          <li class="header__menu-item header__menu-item--inner-page col">
+      <div class="header__menu header__menu--inner-page col col-xl-7">
+        <ul class="header__menu-list header__menu-list--inner-page row">
+          <li class="header__menu-item header__menu-item--inner-page col col-xl col-md-12">
             <a href="#">Межкомнатные</a>
           </li>
-          <li class="header__menu-item header__menu-item--inner-page col">
+          <div class="w-100"></div>
+          <li class="header__menu-item header__menu-item--inner-page col col-xl col-md-12">
             <a href="#">Входные</a>
           </li>
-          <li class="header__menu-item header__menu-item--inner-page col">
+          <div class="w-100"></div>
+          <li class="header__menu-item header__menu-item--inner-page col col-xl col-md-12">
             <a href="#">Раздвижные</a>
           </li>
-          <li class="header__menu-item header__menu-item--inner-page col">
+          <div class="w-100"></div>
+          <li class="header__menu-item header__menu-item--inner-page col col-xl col-md-12">
             <a href="#">Складные</a>
           </li>
-          <li class="header__menu-item header__menu-item--inner-page col">
+          <div class="w-100"></div>
+          <li class="header__menu-item header__menu-item--inner-page col col-xl col-md-12">
             <a href="#">Специальные</a>
           </li>
-          <li class="header__menu-item header__menu-item--inner-page col">
+          <div class="w-100"></div>
+          <li class="header__menu-item header__menu-item--inner-page col col-xl col-md-12">
             <a href="#">Фурнитура</a>
           </li>
-          <li class="header__menu-item header__menu-item--inner-page col">
+          <div class="w-100"></div>
+          <li class="header__menu-item header__menu-item--inner-page col col-xl col-md-12">
             <a href="#">Арки и порталы</a>
           </li>
         </ul>
-        <ul class="header__menu-list  header__menu-list--inner-page row row-cols-2 row-cols-xl-2 row-cols-lg-3 row-cols-md-1 row-cols-sm-1 row-cols-xs-1 col-2">
-          <li class="header__menu-item header__menu-item--inner-page col">
+      </div>
+        <ul class="header__menu-list header__menu-list--cart-search  header__menu-list--inner-page row col col-xl-1">
+          <li class="header__menu-item header__menu-item--inner-page col-2">
             <a href="#">
               <svg width="16" height="16">
                 <use xlink:href="img/sprite.svg#search"></use>
               </svg>
             </a>
           </li>
-          <li class="header__menu-item header__menu-item--inner-page col">
+          <li class="header__menu-item header__menu-item--inner-page col-2">
             <a href="#">
               <svg width="29" height="25">
                 <use xlink:href="img/sprite.svg#cart"></use>
@@ -58,130 +65,127 @@
             </a>
           </li>
         </ul>
-      </div>
     </section>
   </header>
-  <main>
-    <section class="breadcrumbs">
-      <ul class="breadcrumbs__list">
-        <li class="breadcrumbs__item">
-          <a href="catalog.html">Каталог</a>
-          <p class="breadcrumbs__item-slash">/</p>
-        </li>
-      </ul>
-    </section>
-    <section class="catalog">
-      <h2 class="catalog__header">Межкомнатные двери</h2>
-      <ul class="catalog__list row row-cols-1 row-cols-xl-3 row-cols-lg-2 row-cols-md-1 row-cols-sm-1 row-cols-xs-1">
-        <li class="catalog-goods__item col align-self-start">
-          <img class="catalog__item-image" src="img/white-door.png" alt="Межкомнатные двери">
-          <div class="catalog__item-text">
-            <p class="catalog__item-header">Межкомнатные двери</p>
-            <p class="catalog__item-text-item">Порта - 29</p>
-            <p class="catalog__item-price">2 790 .—</p>
-          </div>
-        </li>
-        <li class="catalog__item col align-self-end">
-          <img class="catalog__item-image" src="img/grey-door.png" alt="Межкомнатные двери">
-          <div class="catalog__item-text">
-            <p class="catalog__item-header">Межкомнатные двери</p>
-            <p class="catalog__item-text-item">Порта - 29</p>
-            <p class="catalog__item-price">3 640 .—</p>
-          </div>
-        </li>
-        <li class="catalog__item col align-self-end">
-          <img class="catalog__item-image" src="img/dark-grey-door.png" alt="Межкомнатные двери">
-          <div class="catalog__item-text">
-            <p class="catalog__item-header">Межкомнатные двери</p>
-            <p class="catalog__item-text-item">Порта - 29</p>
-            <p class="catalog__item-old-price">5 770</p>
-            <p class="catalog__item-price">4 320 .—</p>
-          </div>
-        </li>
-        <li class="catalog__item col align-self-end">
-          <img class="catalog__item-image" src="img/grey-door.png" alt="Межкомнатные двери">
-          <div class="catalog__item-text">
-            <p class="catalog__item-header">Межкомнатные двери</p>
-            <p class="catalog__item-text-item">Порта - 29</p>
-            <p class="catalog__item-price">2790 .—</p>
-          </div>
-        </li>
-        <li class="catalog__item col align-self-end">
-          <img class="catalog__item-image" src="img/dark-grey-door.png" alt="Межкомнатные двери">
-          <div class="catalog__item-text">
-            <p class="catalog__item-header">Межкомнатные двери</p>
-            <p class="catalog__item-text-item">Порта - 29</p>
-            <p class="catalog__item-price">3 640 .—</p>
-          </div>
-        </li>
-        <li class="catalog__item col align-self-end">
-          <img class="catalog__item-image" src="img/white-door.png" alt="Межкомнатные двери">
-          <div class="catalog__item-text">
-            <p class="catalog__item-header">Межкомнатные двери</p>
-            <p class="catalog__item-text-item">Порта - 29</p>
-            <p class="catalog__item-old-price">5 770</p>
-            <p class="catalog__item-price">4 320 .—</p>
-          </div>
-        </li>
-        <li class="catalog__item col align-self-end">
-          <img class="catalog__item-image" src="img/white-door.png" alt="Межкомнатные двери">
-          <div class="catalog__item-text">
-            <p class="catalog__item-header">Межкомнатные двери</p>
-            <p class="catalog__item-text-item">Порта - 29</p>
-            <p class="catalog__item-price">2 790 .—</p>
-          </div>
-        </li>
-        <li class="catalog__item col align-self-end">
-          <img class="catalog__item-image" src="img/grey-door.png" alt="Межкомнатные двери">
-          <div class="catalog__item-text">
-            <p class="catalog__item-header">Межкомнатные двери</p>
-            <p class="catalog__item-text-item">Порта - 29</p>
-            <p class="catalog__item-price">3 640 .—</p>
-          </div>
-        </li>
-        <li class="catalog__item col align-self-end">
-          <img class="catalog__item-image" src="img/dark-grey-door.png" alt="Межкомнатные двери">
-          <div class="catalog__item-text">
-            <p class="catalog__item-header">Межкомнатные двери</p>
-            <p class="catalog__item-text-item">Порта - 29</p>
-            <p class="catalog__item-old-price">5 770</p>
-            <p class="catalog__item-price">4 320 .—</p>
-          </div>
-        </li>
-      </ul>
-      <button class="catalog__button" href="catalog.html">Показать ещё
-        <svg width="154" height="16">
-          <use xlink:href="img/sprite.svg#arrow"></use>
-        </svg>
-      </button>
-    </section>
-    <section class="filter row">
+  <main class="main-inner-page row">
+    <div class="main-inner-page__breadcrumbs-catalog col-9">
+      <section class="breadcrumbs">
+        <ul class="breadcrumbs__list">
+          <li class="breadcrumbs__item">
+            <a href="catalog.html">Каталог</a>
+            <p class="breadcrumbs__item-slash">/</p>
+          </li>
+        </ul>
+      </section>
+      <section class="catalog">
+        <h2 class="catalog__header">Межкомнатные двери</h2>
+        <ul class="catalog__list row row-cols-1 row-cols-xl-3 row-cols-lg-2 row-cols-md-1 row-cols-sm-1 row-cols-xs-1">
+          <li class="catalog-goods__item col align-self-start">
+            <img class="catalog__item-image" src="img/white-door.png" alt="Межкомнатные двери">
+            <div class="catalog__item-text">
+              <p class="catalog__item-header">Межкомнатные двери</p>
+              <p class="catalog__item-text-item">Порта - 29</p>
+              <p class="catalog__item-price">2 790 .—</p>
+            </div>
+          </li>
+          <li class="catalog__item col align-self-end">
+            <img class="catalog__item-image" src="img/grey-door.png" alt="Межкомнатные двери">
+            <div class="catalog__item-text">
+              <p class="catalog__item-header">Межкомнатные двери</p>
+              <p class="catalog__item-text-item">Порта - 29</p>
+              <p class="catalog__item-price">3 640 .—</p>
+            </div>
+          </li>
+          <li class="catalog__item col align-self-end">
+            <img class="catalog__item-image" src="img/dark-grey-door.png" alt="Межкомнатные двери">
+            <div class="catalog__item-text">
+              <p class="catalog__item-header">Межкомнатные двери</p>
+              <p class="catalog__item-text-item">Порта - 29</p>
+              <p class="catalog__item-old-price">5 770</p>
+              <p class="catalog__item-price">4 320 .—</p>
+            </div>
+          </li>
+          <li class="catalog__item col align-self-end">
+            <img class="catalog__item-image" src="img/grey-door.png" alt="Межкомнатные двери">
+            <div class="catalog__item-text">
+              <p class="catalog__item-header">Межкомнатные двери</p>
+              <p class="catalog__item-text-item">Порта - 29</p>
+              <p class="catalog__item-price">2790 .—</p>
+            </div>
+          </li>
+          <li class="catalog__item col align-self-end">
+            <img class="catalog__item-image" src="img/dark-grey-door.png" alt="Межкомнатные двери">
+            <div class="catalog__item-text">
+              <p class="catalog__item-header">Межкомнатные двери</p>
+              <p class="catalog__item-text-item">Порта - 29</p>
+              <p class="catalog__item-price">3 640 .—</p>
+            </div>
+          </li>
+          <li class="catalog__item col align-self-end">
+            <img class="catalog__item-image" src="img/white-door.png" alt="Межкомнатные двери">
+            <div class="catalog__item-text">
+              <p class="catalog__item-header">Межкомнатные двери</p>
+              <p class="catalog__item-text-item">Порта - 29</p>
+              <p class="catalog__item-old-price">5 770</p>
+              <p class="catalog__item-price">4 320 .—</p>
+            </div>
+          </li>
+          <li class="catalog__item col align-self-end">
+            <img class="catalog__item-image" src="img/white-door.png" alt="Межкомнатные двери">
+            <div class="catalog__item-text">
+              <p class="catalog__item-header">Межкомнатные двери</p>
+              <p class="catalog__item-text-item">Порта - 29</p>
+              <p class="catalog__item-price">2 790 .—</p>
+            </div>
+          </li>
+          <li class="catalog__item col align-self-end">
+            <img class="catalog__item-image" src="img/grey-door.png" alt="Межкомнатные двери">
+            <div class="catalog__item-text">
+              <p class="catalog__item-header">Межкомнатные двери</p>
+              <p class="catalog__item-text-item">Порта - 29</p>
+              <p class="catalog__item-price">3 640 .—</p>
+            </div>
+          </li>
+          <li class="catalog__item col align-self-end">
+            <img class="catalog__item-image" src="img/dark-grey-door.png" alt="Межкомнатные двери">
+            <div class="catalog__item-text">
+              <p class="catalog__item-header">Межкомнатные двери</p>
+              <p class="catalog__item-text-item">Порта - 29</p>
+              <p class="catalog__item-old-price">5 770</p>
+              <p class="catalog__item-price">4 320 .—</p>
+            </div>
+          </li>
+        </ul>
+        <button class="catalog__button" href="catalog.html">Показать ещё
+          <svg width="154" height="16">
+            <use xlink:href="img/sprite.svg#arrow"></use>
+          </svg>
+        </button>
+      </section>
+    </div>
+    <section class="filter col-3">
       <div class="filter__wrapper">
         <form class="filter__form">
-          <fieldset class="filter__form-group col6">
-            <legend class="filter__form-group-legend">Размер</legend>
-            <ul class="filter__form-group-list">
+          <div class="filter__form-group row">
+            <legend class="filter__form-group-legend col">Размер</legend>
+            <ul class="filter__form-group-list col">
               <li class="filter__form-group-item">
-                <input class="visually-hidden" type="checkbox" id="70x205" value="70x205" checked>
-                <label class="filter__form-item-label" id="70x205">70x205</label>
+                <input class="filter__form-group-item-input-size visually-hidden" type="checkbox" id="70x205" value="70x205" checked>
+                <label class="filter__form-item-label-size" id="70x205">70x205</label>
               </li>
               <li class="filter__form-group-item">
-                <input class="visually-hidden" type="checkbox" id="70x205" value="70x205">
-                <label class="filter__form-item-label" id="70x205">70x205</label>
+                <input class="filter__form-group-item-input-size visually-hidden" type="checkbox" id="70x205" value="70x205">
+                <label class="filter__form-item-label-size" id="70x205">70x205</label>
               </li>
               <li class="filter__form-group-item">
-                <input class="visually-hidden" type="checkbox" id="70x205" value="70x205">
-                <label class="filter__form-item-label" id="70x205">70x205</label>
-              </li>
-              <li class="filter__form-group-item">
-                <input class="visually-hidden" type="checkbox" id="70x205" value="70x205">
-                <label class="filter__form-item-label" id="70x205">70x205</label>
+                <input class="filter__form-group-item-input-size visually-hidden" type="checkbox" id="70x205" value="70x205">
+                <label class="filter__form-item-label-size" id="70x205">70x205</label>
               </li>
             </ul>
-          </fieldset>
-          <fieldset class="filter__form-group col6">
-            <legend class="filter__form-group-legend">Цвет</legend>
-            <ul class="filter__form-group-list">
+          </div>
+          <div class="filter__form-group row">
+            <legend class="filter__form-group-legend col">Цвет</legend>
+            <ul class="filter__form-group-list col">
               <li class="filter__form-group-item">
                 <input class="visually-hidden" type="checkbox" id="grey" value="grey" checked>
                 <label class="filter__form-item-label" id="grey">
@@ -200,24 +204,24 @@
                 </label>
               </li>
             </ul>
-          </fieldset>
-          <fieldset class="filter__form-group col6">
-            <legend class="filter__form-group-legend">Цена</legend>
-            <ul class="filter__form-group-list">
+          </div>
+          <div class="filter__form-group row">
+            <legend class="filter__form-group-legend col">Цена</legend>
+            <ul class="filter__form-group-list col">
               <li class="filter__form-group-item">
-                <input class="visually-hidden" type="number" id="from" value="5770" checked>
+                <input class="" type="number" id="from" value="5770" checked>
                 <label class="filter__form-item-label" id="from">
                   От
                 </label>
               </li>
               <li class="filter__form-group-item">
-                <input class="visually-hidden" type="number" id="to" value="15770" checked>
+                <input class="" type="number" id="to" value="15770" checked>
                 <label class="filter__form-item-label" id="to">
                   До
                 </label>
               </li>
             </ul>
-          </fieldset>
+          </div>
           <button class="filter__button" type="reset"></button>
         </form>
       </div>
