@@ -1,5 +1,5 @@
 .popular-goods {
-  padding: 0 5%;
+  @include padding-left-element;
   padding-bottom: 90px;
 
   @media (max-width: $tablet-width) {

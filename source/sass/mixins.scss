@@ -3,6 +3,14 @@
   background-size: cover;
 }
 
+@mixin padding-left-element {
+  padding-left: 5%;
+
+  @media (max-width: $tablet-width) {
+    padding-left: 1%;
+  }
+}
+
 @mixin section {
   padding: 100px 0;
 
@@ -47,4 +55,12 @@
   &:active {
     color: #696969;
   }
+}
+
+@mixin center-absolute-element {
+  left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    position: absolute;
 }

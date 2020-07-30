@@ -15,14 +15,13 @@
 }
 
 .about-company__text {
+  @include padding-left-element;
   background-color: $beige-color;
-  padding-left: 5%;
   padding-top: 105px;
   padding-bottom: 70px;
   max-width: 75%;
 
   @media (max-width: $tablet-width) {
-    margin-left: 0;
     margin-bottom: 0;
     max-width: 100%;
     padding-left: 1%;

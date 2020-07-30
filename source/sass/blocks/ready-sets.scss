@@ -1,10 +1,9 @@
 .ready-sets {
-  margin-left: 5%;
+  @include padding-left-element;
   margin-bottom: 100px;
 
   @media (max-width: $tablet-width) {
     margin-bottom: 50px;
-    padding-left: 1%;
     margin-left: 0;
   }
 }
