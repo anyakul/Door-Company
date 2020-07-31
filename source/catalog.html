@@ -11,22 +11,12 @@
 <body>
 <header class="header">
     <section class="header__logo-promo-menu row">
-      <a class="header__logo-link col-xl-4 col-lg-12 row" href="index.html">
-        <img class="header__logo-image col" width="88" height="81" src="img/logo.png" alt="logo">
-        <div class="header__text-wrapper col">
-          <p class="header__logo-header">Белгородская дверная компания</p>
-          <span class="header__logo-text">Официальный интернет-магазин производства</span>
-        </viv>
-      </a>
-      <a class="header__cart col-12 col-md-1" href="#">
-        <svg width="29" height="25">
-          <use xlink:href="img/sprite.svg#cart"></use>
-        </svg>
-      </a>
-      <a class="header__search col-12 col-md-1" href="#">
-        <svg width="16" height="16">
-          <use xlink:href="img/sprite.svg#search"></use>
-        </svg>
+      <a class="header__logo-link header__logo-link--innner-page row col-12 col-xl-4" href="index.html">
+        <img class="header__logo-image col-2" width="88" height="81" src="img/logo.png" alt="logo">
+        <div class="header__text-wrapper col-10">
+          <p class="header__logo-header header__logo-header--inner-page">Белгородская дверная компания</p>
+          <span class="header__logo-text header__logo-text--inner-page">Официальный интернет-магазин производства</span>
+        </div>
       </a>
       <button class="header__toggle" type="button">
         <svg width="40" height="20">
@@ -34,49 +24,45 @@
         </svg>
         <span class="visually-hidden">Открыть меню</span>
       </button>
-      <div class="header__menu header__menu--inner-page header__menu--no-js header__menu--closed col col-xl-8 col-lg-12">
-        <ul class="header__menu-list row row-cols-xl-9">
-          <li class="header__menu-item header__menu-item--inner-page col col12">
-            <a href="#">Межкомнатные двери</a>
+      <a class="header__cart col-12" href="#">
+        <svg width="29" height="25">
+          <use xlink:href="img/sprite.svg#cart"></use>
+        </svg>
+      </a>
+      <a class="header__search" href="#">
+        <svg>
+          <use xlink:href="img/sprite.svg#search"></use>
+        </svg>
+      </a>
+      <div class="header__menu header__menu--closed header__menu--inner-page col col-12 col-xl-8">
+        <ul class="header__menu-list header__menu-list--inner-page row row-cols-1 row-cols-md-3 ">
+          <li class="header__menu-item header__menu-item--inner-page col col-xl col-12">
+            <a href="#">Межкомнатные</a>
           </li>
-          <li class="header__menu-item header__menu-item--inner-page col col12">
+          <li class="header__menu-item header__menu-item--inner-page col col-xl col-12">
+            <a href="#">Входные</a>
+          </li>
+          <li class="header__menu-item header__menu-item--inner-page col col-xl col-12">
+            <a href="#">Раздвижные</a>
+          </li>
+          <li class="header__menu-item header__menu-item--inner-page col col-xl col-12">
+            <a href="#">Складные</a>
+          </li>
+          <li class="header__menu-item header__menu-item--inner-page col col-xl col-12">
             <a href="#">Арки и порталы</a>
           </li>
-          <li class="header__menu-item header__menu-item--inner-page col col12">
-            <a href="#">Входные двери</a>
-          </li>
-          <li class="header__menu-item header__menu-item--inner-page col col12">
+          <li class="header__menu-item header__menu-item--inner-page col col-xl col-12">
             <a href="#">Фурнитура</a>
           </li>
-          <li class="header__menu-item header__menu-item--inner-page col col12">
-            <a href="#">Раздвижные двери</a>
-          </li>
-          <li class="header__menu-item header__menu-item--inner-page col col12">
-            <a href="#">Специальные двери</a>
-          </li>
-          <li class="header__menu-item header__menu-item--inner-page col col12">
-            <a href="#">Складные двери</a>
-          </li>
-          <li class="header__menu-item header__menu-item--inner-page col col12">
-            <a class="header__promo-cart col-12 col-md-1" href="#">
-              <svg width="29" height="25">
-                <use xlink:href="img/sprite.svg#cart"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="header__menu-item header__menu-item--inner-page col col12">
-            <button class="header__promo-search-form-button">
-              <svg>
-                <use xlink:href="img/sprite.svg#search"></use>
-              </svg>
-            </button>
+          <li class="header__menu-item header__menu-item--inner-page col col-xl col-12">
+            <a href="#">Специальные</a>
           </li>
         </ul>
       </div>
     </section>
   </header>
-  <main class="main-inner-page row">
-   <!-- <div class="main-inner-page__breadcrumbs-catalog col-9">
+  <main class="main main--inner-page row">
+    <div class="main-inner-page__breadcrumbs-catalog col-9">
       <section class="breadcrumbs">
         <ul class="breadcrumbs__list">
           <li class="breadcrumbs__item">
@@ -233,7 +219,7 @@
           <button class="filter__button" type="reset"></button>
         </form>
       </div>
-    </section>-->
+    </section>
   </main>
   <footer class="footer">
     <div class="footer__menu-copyright">
@@ -296,5 +282,6 @@
       </button>
     </div>
   </footer>
+  <script src="js/header-menu.js"></script>
 </body>
 </html>

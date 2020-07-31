@@ -11,6 +11,11 @@
   }
 }
 
+@mixin cancel-button {
+  background-color: transparent;
+  border: none;
+}
+
 @mixin section {
   padding: 100px 0;
 
