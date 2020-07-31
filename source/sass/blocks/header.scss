@@ -59,7 +59,7 @@
   }
 
   @media (max-width: $tablet-width) {
-    padding: 30px 2% 10px 15%;
+    padding: 30px 2% 10px 100px;
     order: 1;
   }
 }
@@ -178,7 +178,7 @@
 
 .header__promo-search-form-button {
   background-color: transparent;
-  width: 30px;
+  width: 40px;
   position: relative;
   height: 35px;
   border: 1px solid $white-color;

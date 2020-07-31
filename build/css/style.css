@@ -116,7 +116,7 @@ body {
     padding-top: 0; }
   @media (max-width: 1199px) {
     .header__logo-link {
-      padding: 30px 2% 10px 15%;
+      padding: 30px 2% 10px 100px;
       -webkit-box-ordinal-group: 2;
           -ms-flex-order: 1;
               order: 1; } }
@@ -253,7 +253,7 @@ body {
 
 .header__promo-search-form-button {
   background-color: transparent;
-  width: 30px;
+  width: 40px;
   position: relative;
   height: 35px;
   border: 1px solid #ffffff;
