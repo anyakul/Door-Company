@@ -255,7 +255,7 @@ body {
 
 .header__promo-search-form-button {
   background-color: transparent;
-  width: 40px;
+  width: 30px;
   position: relative;
   height: 35px;
   border: 1px solid #ffffff;
@@ -545,13 +545,10 @@ body {
       margin-top: 0; } }
 
 .popular-goods__item-image {
-  width: 130px;
-  height: 292px;
   margin-right: 0.1em;
   padding-left: 0; }
   @media (max-width: 768px) {
     .popular-goods__item-image {
-      height: 140px;
       margin-bottom: 0;
       padding-right: 0; } }
 
