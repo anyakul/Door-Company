@@ -1,31 +1,17 @@
 .popular-goods {
   @include padding-left-element;
+  @include margin-from-section;
   padding-bottom: 90px;
-
-  @media (max-width: $tablet-width) {
-    padding-left: 1%;
-  }
-
-  @media (max-width: $tablet-width) {
-    margin-bottom: 50px;
-  }
-
-  @media (max-width: $mobile-width) {
-    padding: 0;
-  }
-  @media (max-width: $tablet-width) {
-    padding-bottom: 20px;
-  }
 }
 
 .popular-goods__header {
   @include section-header;
+  @include margin-from-header;
   width: 20%;
   margin-bottom: 152px;
 
   @media (max-width: $tablet-width) {
     width: 100%;
-    margin-bottom: 50px;
   }
 
   @media (max-width: $mobile-width) {
@@ -35,8 +21,8 @@
 
 .popular-goods__list {
   @include cancel-list;
+  @include margin-from-list;
   min-height: 10rem;
-  margin-bottom: 150px;
 
   @media (max-width: $mobile-width) {
     margin-bottom: 50px;
@@ -56,47 +42,22 @@
 .popular-goods__item {
   display: flex;
   flex-direction: row;
+  margin-top: 185px;
 
 
   @media (max-width: $mobile-width) {
     margin: 0;
-    height: 160px;
     padding-left: 1%;
   }
 
   &:nth-child(1),
   &:nth-child(3n),
   &:nth-child(4n) {
-    height: 390px;
-
-    .popular-goods__item-text {
-      margin-top: auto;
-      margin-bottom: 55px;
-
-      @media (max-width: $mobile-width) {
-        height: 160px;
-        margin-top: 0;
-      }
-    }
+    margin-top: 0;
   }
 
   @media (max-width: $tablet-width) {
-    margin-bottom: 20px;
-
-    &:nth-child(1),
-    &:nth-child(3n),
-    &:nth-child(4n) {
-      height: 292px;
-
-      @media (max-width: $mobile-width) {
-        height: 160px;
-      }
-
-      .popular-goods__item-text {
-        margin-top: 0;
-        margin-bottom: 0;
-      }
-    }
+    margin-top: 0;
   }
 }
 
@@ -131,8 +92,7 @@
 }
 
 .popular-goods__item-header {
-  font-size: 20px;
-  line-height: 23px;
+  @include section-text;
   margin-bottom: 5px;
 
   @media (max-width: $mobile-width) {
@@ -151,8 +111,9 @@
 }
 
 .popular-goods__item-old-price {
-  font-size: 20px;
-  line-height: 23px;
+  @include section-text;
+  color: $blue-color;
+  text-decoration: line-through;
 
   @media (max-width: $mobile-width) {
     font-size: 14px;
@@ -160,14 +121,10 @@
   }
 }
 
-.popular-goods__item-old-price {
-  color: $blue-color;
-  text-decoration: line-through;
-}
-
 .popular-goods__button {
   @include dark-link;
   @include section-header;
+  @include margin-from-button;
   margin-bottom: 100px;
   margin-left: auto;
   width: 37%;
@@ -175,17 +132,19 @@
 
   @media (max-width: $tablet-width) {
     width: 98%;
-    margin-bottom: 50px;
     margin-left: 1%;
   }
 
   @media (max-width: $mobile-width) {
     font-size: 14px;
-    margin-bottom: 30px;
   }
 
   svg {
     @include dark-link;
+
+    @media (max-width: $tablet-width) {
+      margin-left: 30px;
+    }
 
     @media (max-width: $mobile-width) {
       display: none;

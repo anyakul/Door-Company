@@ -2,3 +2,12 @@
   @include cancel-list;
   margin-bottom: 30px;
 }
+.breadcrumbs__item {
+  a {
+    color: $black-color;
+  }
+
+  svg {
+    color: $black-color;
+  }
+}

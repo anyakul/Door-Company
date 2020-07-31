@@ -3,11 +3,11 @@
 
   @media (max-width: $tablet-width) {
     position: relative;
-    margin-bottom: 40px;
+    margin-bottom: 60px;
     padding-left: 0;
   }
   @media (max-width: $mobile-width) {
-    margin-bottom: 70px;
+    margin-bottom: 30px;
   }
 }
 
@@ -24,16 +24,7 @@
   line-height: 26px;
 
   @media (max-width: $tablet-width) {
-    margin-bottom: 0;
-  }
-
-  @media (max-width: $mobile-width) {
-    font-size: 18px;
-  }
-
-  &--inner-page {
-    font-size: 20px;
-    line-height: 23px;
+    display: none;
   }
 }
 
@@ -42,6 +33,7 @@
   padding-top: 85px;
   text-align: left;
   background-color: $white-color;
+  padding-left: 0;
 
   @media (max-width: $tablet-width) {
     padding-top: 30px;
@@ -60,7 +52,7 @@
   }
 
   @media (max-width: $tablet-width) {
-    padding: 30px 2% 10px 100px;
+    padding: 30px 2% 20px 100px;
     order: 1;
   }
 }
@@ -81,10 +73,12 @@
 
   @media (max-width: $tablet-width) {
     margin-right: 20px;
+    display: none;
   }
 
   @media (max-width: $mobile-width) {
     font-size: 14px;
+    margin-left: -68px;
   }
 
   &--inner-page {
@@ -116,7 +110,7 @@
   @media (max-width: $tablet-width) {
     display: block;
     position: fixed;
-    top: 30px;
+    top: 28px;
     right: 110px;
     width: 30px;
     height: 30px;
@@ -131,13 +125,13 @@
   background-image: url("../img/door-handle@1x.png");
   background-size: cover;
   background-repeat: no-repeat;
-  padding: 47px 5% 80px 5%;
+  padding: 47px 2% 80px 5%;
   margin-right: 0;
 
   @media (max-width: $tablet-width) {
     padding: 35px 0 40px 0;
     order: 3;
-    margin-top: 140px;
+    margin-top: 100px;
   }
 }
 
@@ -161,6 +155,11 @@
   padding: 11px 25px;
   height: 35px;
 
+  @media (max-width: $tablet-width) {
+    border-right: 1px solid $white-color;
+  }
+
+
   &::placeholder {
     @include white-link;
     color: $white-color;
@@ -174,8 +173,10 @@
   height: 33px;
   margin-right: auto;
   padding-left: 30px;
+  margin-bottom: 320px;
   @media (max-width: $tablet-width) {
     padding-left: 1%;
+    margin-bottom: 200px;
   }
 }
 
@@ -187,16 +188,16 @@
   border: 1px solid $white-color;
   border-left: none;
 
+  @media (max-width: $tablet-width) {
+    display: none;
+  }
+
   svg {
     @include white-link;
     color: $white-color;
     @include center-absolute-element
     width: 64px;
     height: 64px;
-
-    @media (max-width: $tablet-width) {
-      display: none;
-    }
   }
 }
 
@@ -233,11 +234,6 @@
 .header__promo-text-item {
   @include section-header;
   color: $white-color;
-  padding-top: 320px;
-
-  @media (max-width: $tablet-width) {
-    padding-top: 200px;
-  }
 }
 
 .header__promo-text-item-button {
@@ -246,15 +242,15 @@
 
 .header__menu {
   margin-top: -235px;
-  height: 400px;
+  height: 410px;
   background-color: $blue-color;
 
     @media (max-width: $tablet-width) {
-      padding: 47px 0 80px 0;
+      padding: 20px 0 0;
       order: 2;
       position: fixed;
       z-index: 40;
-      top: 145px;
+      top: 100px;
 
       &--no-js {
         display: block;
@@ -309,7 +305,7 @@
     display: block;
     position: fixed;
     right: 20px;
-    top: 30px;
+    top: 23px;
     left: 2%;
     background-color: transparent;
     border: none;
@@ -364,10 +360,14 @@
 .header__menu-item {
   margin-bottom: 40px;
 
+    @media (max-width: $tablet-width) {
+      margin-bottom: 20px;
+    }
+
   a {
     @include white-link;
+    @include section-text;
     color: $white-color;
-    font-size: 20px;
 
     @media (max-width: $tablet-width) {
       font-size: 30px;
@@ -409,6 +409,7 @@
 
   @media (max-width: $tablet-width) {
     order: 4;
+    padding-top: 0;
   }
 }
 
@@ -417,16 +418,15 @@
   @include cancel-list;
 }
 
+.header__info-item {
+  margin-top: 20px;
+}
+
 .header__info-item-header {
   @include section-header;
 }
 
 .header__info-item-text {
-  font-size: 20px;
-  line-height: 26px;
+  @include section-text;
   text-transform: uppercase;
-
-  @media (max-width: $tablet-width) {
-    font-size: 16px;
-  }
 }

@@ -35,8 +35,7 @@
 }
 
 .about-company__text-item {
-  font-size: 20px;
-  line-height: 40px;
+  @include section-long-text;
   margin-bottom: 30px;
 
   &:last-child {
@@ -72,8 +71,7 @@
 }
 
 .about-company__item-text {
-  font-size: 20px;
-  line-height: 23px;
+  @include section-text;
   text-transform: uppercase;
   width: 42%;
 
