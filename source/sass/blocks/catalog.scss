@@ -1,0 +1,29 @@
+.catalog__header {
+  @include section-header;
+  margin-bottom: 115px;
+}
+
+.catalog__list {
+  @include cancel-list;
+}
+
+.catalog__item {
+  padding-left: 0;
+  margin-bottom: 71px;
+}
+
+
+.catalog__item-text {
+  margin-top: auto;
+}
+
+.catalog__item-header,
+.catalog__item-text-item {
+  font-size: 20px;
+  line-height: 23px;
+}
+
+.catalog__item-price {
+  font-size: 32px;
+  line-height: 37px;
+}

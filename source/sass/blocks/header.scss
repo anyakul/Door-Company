@@ -247,7 +247,22 @@
 .header__menu {
   margin-top: -235px;
   height: 400px;
-    background-color: $blue-color;
+  background-color: $blue-color;
+
+    @media (max-width: $tablet-width) {
+      padding: 47px 0 80px 0;
+      order: 2;
+      position: fixed;
+      z-index: 40;
+      top: 145px;
+
+      &--no-js {
+        display: block;
+      }
+      &--closed {
+        display: none;
+      }
+    }
 
   &--inner-page {
     background-color: transparent;
@@ -257,25 +272,22 @@
     height: auto;
     text-align: center;
     padding-bottom: 0;
-  }
 
-  @media (max-width: $tablet-width) {
-    padding: 47px 0 80px 0;
-    order: 2;
-    position: fixed;
-    z-index: 40;
-    top: 145px;
-    background-color: $white-color;
+    @media (max-width: $tablet-width) {
+      padding: 47px 0 80px 0;
+      order: 2;
+      position: fixed;
+      z-index: 40;
+      top: 145px;
+      background-color: $white-color;
+      position: fixed;
 
-    &--no-js {
-      display: block;
+      &--no-js {
+        display: block;
+      }
     }
 
-    &--closed {
-      display: none;
-    }
   }
-
   @media (max-width: $tablet-width) {
     margin-left: 0;
     margin-top: 0;
