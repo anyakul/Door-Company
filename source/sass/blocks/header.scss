@@ -66,9 +66,11 @@
 
 .header__logo-image {
   margin-bottom: 35px;
+  height: 80px;
 
   @media (max-width: $tablet-width) {
     margin-bottom: 10px;
+    height: 40px;
   }
 }
 
