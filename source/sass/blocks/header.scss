@@ -4,6 +4,7 @@
   @media (max-width: $tablet-width) {
     position: relative;
     margin-bottom: 40px;
+    padding-left: 0;
   }
   @media (max-width: $mobile-width) {
     margin-bottom: 70px;
@@ -13,7 +14,7 @@
 .header__logo-promo-menu {
   @include padding-left-element;
 
-  @media (max-width: $mobile-width) {
+  @media (max-width: $tablet-width) {
     padding-left: 0;
   }
 }
@@ -58,7 +59,7 @@
   }
 
   @media (max-width: $tablet-width) {
-    padding: 30px 2% 0px 7%;
+    padding: 30px 2% 10px 15%;
     order: 1;
   }
 }
@@ -67,7 +68,7 @@
   margin-bottom: 35px;
 
   @media (max-width: $tablet-width) {
-    margin-bottom: 35px;
+    margin-bottom: 10px;
   }
 }
 
@@ -131,9 +132,9 @@
   margin-right: 0;
 
   @media (max-width: $tablet-width) {
-    padding: 82px 0 80px 0;
+    padding: 35px 0 40px 0;
     order: 3;
-    margin-top: 160px;
+    margin-top: 140px;
   }
 }
 
