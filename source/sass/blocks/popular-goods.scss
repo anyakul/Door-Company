@@ -62,13 +62,10 @@
 }
 
 .popular-goods__item-image {
-  width: 130px;
-  height: 292px;
   margin-right: 0.1em;
   padding-left: 0;
 
   @media (max-width: $mobile-width) {
-    height: 140px;
     margin-bottom: 0;
     padding-right: 0;
   }
