@@ -1,17 +1,25 @@
+.catalog {
+  @media (max-width: $tablet-width) {
+    padding-left: 0;
+  }
+}
+
 .catalog__header {
   @include section-header;
-  margin-bottom: 115px;
+  @include margin-from-header;
 }
 
 .catalog__list {
   @include cancel-list;
   padding-left: 0;
-  margin-left: -35px;
+  margin-left: 0;
+  padding-right: 0;
 }
 
 .catalog__item {
   margin-bottom: 70px;
   border: 1px solid $white-color;
+  padding-top: 0;
   padding: 0;
 
   &:hover {
@@ -22,11 +30,23 @@
       color: $white-color;
     }
   }
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 20px;
+  }
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 20px;
+  }
 }
 
 .catalog__item-wrapper {
-  padding: 70px 35px 0 35px;
+  padding: 70px 1% 0 1%;
   border: 1px solid $white-color;
+
+  @media (max-width: $tablet-width) {
+    padding: 20px 1% 0 1%;
+  }
 }
 
 
@@ -35,35 +55,102 @@
   margin-bottom: 20px;
 }
 
+.catalog__item-sale {
+  @include section-text;
+  font-family: $font-light;
+  text-transform: lowercase;
+  background-color: $blue-color;
+  text-align: center;
+  color: $white-color;
+
+  @media (max-width: $mobile-width) {
+    display: none;
+  }
+}
+
 .catalog__item-header,
 .catalog__item-text-item {
-  font-size: 20px;
-  line-height: 23px;
+  @include section-text;
+
+  @media (max-width: $mobile-width) {
+    font-size: 12px;
+    line-height: 16px;
+    padding-left: 0;
+    margin-bottom: 5px;
+  }
 }
 
 .catalog__item-price {
-  font-size: 32px;
-  line-height: 37px;
+  @include item-price;
+}
+
+.catalog__item-old-price {
+  @include item-old-price;
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 5px;
+  }
 }
 
 
 .catalog__item-image {
-  height: 380px;
   margin-bottom: 35px;
+  padding-right: 0;
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 10px;
+  padding-left: 5px;
+  }
 }
 
 .catalog__item-button {
-  margin-bottom: 35px;
   margin: 0 auto;
   padding: 20px 50px;
   background-color: transparent;
-  color: $blue-color;
+  color: $white-color;
   border: 1px solid $white-color;
   text-align: left;
+
+  @media (max-width: $mobile-width) {
+    font-size: 14px;
+    line-height: 16px;
+    padding: 10px;
+
+    svg {
+      display: none;
+    }
+  }
 
   &:hover {
     background-color: $blue-color;
     color: $white-color;
     border: 1px solid $blue-color;
   }
+
+  svg {
+    margin-left: 10px;
+    margin-top: 10px;
+  }
+}
+
+.catalog__button {
+  @include cancel-button;
+  margin-bottom: 200px;
+  text-align: center;
+  width: 100%;
+  font-size: 24px;
+  line-height: 28px;
+  color: $grey-color;
+  text-transform: uppercase;
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 50px;
+    svg {
+      display: none;
+    }
+  }
+}
+
+.catalog__button-text {
+  margin-bottom: 35px;
 }

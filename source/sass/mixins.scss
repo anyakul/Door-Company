@@ -4,7 +4,7 @@
 }
 
 @mixin padding-left-element {
-  padding-left: 5%;
+  padding-left: 2%;
 
   @media (max-width: $tablet-width) {
     padding-left: 0;
@@ -16,6 +16,10 @@
 
   @media (max-width: $tablet-width) {
     margin-bottom: 50px;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 30px;
   }
 }
 
@@ -32,10 +36,44 @@
   line-height: 24px;
 }
 
+@mixin section-text-light {
+  font-size: 20px;
+  line-height: 24px;
+  font-family: $font-light;
+}
+
+@mixin item-price {
+  font-size: 2rem;
+  line-height: 37px;
+
+  @media (max-width: $tablet-width) {
+    font-size: 24px;
+    line-height: 26px;
+  }
+
+  @media (max-width: $mobile-width) {
+    font-size: 13px;
+  }
+}
+
+@mixin item-old-price {
+  font-size: 20px;
+  line-height: 23px;
+  color: $blue-color;
+  text-decoration: line-through;
+
+  @media (max-width: $mobile-width) {
+    font-size: 12px;
+  }
+}
+
 
 @mixin section-long-text {
   font-size: 20px;
   line-height: 40px;
+  @media (max-width: $tablet-width) {
+    line-height: 30px;
+  }
 }
 
 @mixin margin-from-section {
@@ -110,4 +148,5 @@
     top: 0;
     bottom: 0;
     position: absolute;
+    margin: auto;
 }

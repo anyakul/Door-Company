@@ -1,6 +1,17 @@
 .filter {
   position: relative;
   width: 600px;
+  padding-top: 30px;
+  padding-left: 4%;
+    align-itmems: flex-start;
+  @media (max-width: $tablet-width) {
+    background-color: $beige-color;
+    padding-top: 75px;
+    order: 1;
+  padding-bottom: 50px;
+  margin-bottom: 50px;
+
+  }
 
 
     &::before {
@@ -9,7 +20,7 @@
         right: 0;
         top: -50%;
         width: 100%;
-        height: 150%;
+        height: 76%;
         position: absolute;
         background-color: $beige-color;
         z-index: -1;
@@ -21,33 +32,130 @@
   margin-right: 5%;
 }
 
+.filter__form-group {
+  margin-bottom: 60px;
 
+  @media (max-width: $tablet-width) {
+    margin-bottom: 20px;
+  }
+}
 
 .filter__form-group-legend {
-  font-size: 20px;
-  line-height: 23px;
+  @include section-text;
+  text-align: left;
+  padding-left: 0;
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 20px;
+    font-size: 18px
+  }
+}
+
+.filter__form-item-label-color {
+  width: 35px;
+  height: 35px;
+  margin-bottom: 0;
+  display: block;
+  position: relative;
+
+  svg {
+    @include center-absolute-element;
+    width: 20px;
+    height: 25px;
+    display: none;
+  }
+
+  &[for="black"] {
+    background-color: $black-color;
+  }
+
+  &[for="brown"] {
+    background-color: $brown-color;
+  }
+
+  &[for="grey"] {
+    background-color: $grey-color;
+  }
+}
+
+.filter__form-group-item-input-color {
+  &:checked + label svg {
+    display: block;
+  }
 }
 
 
-.filter__form-group-list {
-  @include cancel-list;
+.filter__form-item-label-price {
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: lowercase;
 }
 
+.filter__form-group-legend--price {
+  padding-top: 20px;
+}
 
 .filter__form-group-list {
   @include cancel-list;
+
+  @media (max-width: $mobile-width) {
+    padding-left: 0;
+  }
+}
+
+.filter__form-item-input-price {
+  background-color: transparent;
+  @include section-text-light;
+  color: $blue-color;
+  width: 100%;
+  border: none;
+}
+
+.filter__form-group-item {
+  margin-bottom: 25px;
+  margin-right: 1em;
+
+  &--size {
+    text-align: right;
+  margin-left: auto;
+  }
+}
+
+.filter__form-group-item-size {
+  margin-bottom: 25px;
+  margin-right: 10px;
+  text-align: right;
+
+  @media (max-width: $tablet-width) {
+    text-align: left;
+  }
 }
 
 .filter__form-item-label-size {
-  width: 113px;
   border: 1px solid $blue-color;
   font-size: 20px;
   line-height: 23px;
   text-align: center;
   padding: 15px;
+  margin-left: auto;
+
+  @media (max-width: $mobile-width) {
+    margin-left: 0;
+    font-size: 14px;
+  }
 }
 
-.filter__form-item-input-size::checked + label {
+.filter__form-group-item-input-size:checked + label {
   color: $white-color;
-  background-color: 1px solid $blue-color;
+  background-color: $blue-color;
+}
+
+.filter__button {
+  @include cancel-button;
+  width: 100%;
+  text-align: center;
+  color: $blue-color;
+  text-decoration: underline;
+  font-size: 18px;
+  line-height: 30px;
 }

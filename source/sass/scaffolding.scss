@@ -26,7 +26,12 @@ body {
 
 
 .main-inner-page__breadcrumbs-catalog {
-  padding-left: 5%;
+  padding-left: 2%;
+
+  @media (max-width: $tablet-width) {
+    padding-left: 0;
+    order: 2;
+  }
 }
 
 @font-face {
@@ -38,8 +43,16 @@ body {
 }
 
 @font-face {
-  font-family: "PT Sans";
-  src: url("../fonts/ptsansbold.woff2") format("woff2"), url("../fonts/ptsansbold.woff") format("woff");
+  font-family: "Robotocondensedlight";
+  src: url("../fonts/Robotocondensedlight.woff2") format("woff2"), url("../fonts/Robotocondensedbold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Robotocondensedbold";
+  src: url("../fonts/Robotocondensedbold.woff2") format("woff2"), url("../fonts/Robotocondensedbold.woff") format("woff");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
