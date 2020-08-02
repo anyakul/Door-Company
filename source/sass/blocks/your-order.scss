@@ -8,6 +8,9 @@
 .your-order__header {
   @include section-item-header;
   margin-bottom: 60px;
+  @media (max-width: $tablet-width) {
+    margin-bottom: 30px;
+  }
 }
 
 .your-order__list {
@@ -15,20 +18,23 @@
   padding-left: 0;
   margin-bottom: 90px;
   @media (max-width: $tablet-width) {
-    margin-bottom: 40px;
+    margin-bottom: 20px;
   }
 }
 
 .your-order__item {
   margin-bottom: 25px;
   padding-left: 0;
+  @media (max-width: $tablet-width) {
+    margin-bottom: 10px;
+  }
 }
 
 .your-order__sum {
   margin-bottom: 340px;
   padding-left: 0;
   @media (max-width: $tablet-width) {
-    margin-bottom: 50px;
+    margin-bottom: 20px;
   }
 }
 

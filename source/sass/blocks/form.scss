@@ -17,6 +17,7 @@
 .form__group {
   margin-bottom: 110px;
   padding-left: 0;
+  padding-right: 0;
   align-items: center;
   @media (max-width: $tablet-width) {
     margin-bottom: 40px;
@@ -27,6 +28,7 @@
   @include legend;
   margin-bottom: 40px;
   padding-left: 0;
+  padding-right: 0;
   &--payment {
     margin-bottom: 20px;
   }
@@ -42,6 +44,7 @@
 .form__group-label-group,
 .form__group-text {
   padding-left: 0;
+  padding-right: 0;
 }
 
 .form__group-label {
@@ -56,12 +59,14 @@
 .form__group-list {
   @include cancel-list;
   padding-left: 0;
+  padding-right: 0;
 }
 
 
 .form__group-item {
   padding-bottom: 15px;
   padding-left: 0;
+  padding-right: 0;
 }
 
 .form__group-input {
@@ -92,6 +97,7 @@
   margin-top: 26px;
   margin-bottom: 20px;
   padding-left: 0;
+  padding-right: 0;
 
   &--payment {
     margin: 0;
@@ -139,7 +145,14 @@
 
 .form__buttons {
   padding-left: 0;
+  padding-right: 0;
   align-items: flex-start;
+}
+
+.form__group-text {
+  @media (max-width: $mobile-width) {
+    display: none;
+  }
 }
 
 .form__button {
