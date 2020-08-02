@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Door Company</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="header">
+    <section class="header__logo-promo-menu row">
+      <a class="header__logo-link header__logo-link--innner-page row col-12 col-xl-3" href="index.html">
+        <img class="header__logo-image col-4" width="88" height="81" src="img/logo.png" alt="logo">
+        <div class="header__text-wrapper col-8">
+          <p class="header__logo-header header__logo-header--inner-page">Белгородская дверная компания</p>
+          <span class="header__logo-text header__logo-text--inner-page">Официальный интернет-магазин производства</span>
+        </div>
+      </a>
+      <button class="header__toggle" type="button">
+        <svg width="40" height="20">
+          <use xlink:href="img/sprite.svg#menu"></use>
+        </svg>
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+      <a class="header__cart" href="#">
+        <svg width="30" height="30">
+          <use xlink:href="img/sprite.svg#cart"></use>
+        </svg>
+      </a>
+      <a class="header__search" href="#">
+        <svg>
+          <use xlink:href="img/sprite.svg#search"></use>
+        </svg>
+      </a>
+      <div class="header__menu header__menu--closed header__menu--inner-page col col-12 col-xl-9">
+        <ul class="header__menu-list header__menu-list--inner-page row row-cols-1 row-cols-md-3 ">
+          <li class="header__menu-item header__menu-item--inner-page col col-xl col-12">
+            <a href="#">Межкомнатные</a>
+          </li>
+          <li class="header__menu-item header__menu-item--inner-page col col-xl col-12">
+            <a href="#">Входные</a>
+          </li>
+          <li class="header__menu-item header__menu-item--inner-page col col-xl col-12">
+            <a href="#">Раздвижные</a>
+          </li>
+          <li class="header__menu-item header__menu-item--inner-page col col-xl col-12">
+            <a href="#">Складные</a>
+          </li>
+          <li class="header__menu-item header__menu-item--inner-page col col-xl col-12">
+            <a href="#">Арки и порталы</a>
+          </li>
+          <li class="header__menu-item header__menu-item--inner-page col col-xl col-12">
+            <a href="#">Фурнитура</a>
+          </li>
+          <li class="header__menu-item header__menu-item--inner-page col col-xl col-12">
+            <a href="#">Специальные</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </header>
+  <main class="main main--inner-page row">
+    <div class="main__breadcrumbs-order col-12 col-xl-10">
+      <div class="breadcrumbs row col-12">
+        <ul class="breadcrumbs__list breadcrumbs__list--card-page col-12 cols-md-7 row">
+          <li class="breadcrumbs__item row">
+            <a class="breadcrumbs__item-link col" href="catalog.html">Каталог /</a>
+          </li>
+          <li class="breadcrumbs__item row">
+            <a class="breadcrumbs__item-link col" href="catalog.html">Межкомнатные двери</a>
+          </li>
+        </ul>
+      </div>
+      <section class="order row">
+        <div class="order__images row col-12 col-md-5">
+          <img class="order__image col align-self-start" src="img/white-door.png" alt="Межкомнатные двери">
+          <img class="order__image col align-self-end" src="img/white-door.png" alt="Межкомнатные двери">
+        </div>
+        <div class="order__info row col-12 col-md-7">
+          <h1 class="order__name col-12">Порта - 29</h1>
+          <form class="order__form col-12">
+            <ul class="order__form-group-list order__form-group-list--color col-12 row">
+              <li class="order__form-group-item col-2">
+                <input class="order__form-group-item-input-color visually-hidden" type="checkbox" id="grey" value="grey" checked="">
+                <label class="order__form-item-label-color" for="grey">
+                  <svg width="10" height="17">
+                    <use xlink:href="img/sprite.svg#tick"></use>
+                  </svg>
+                </label>
+              </li>
+              <li class="order__form-group-item col-2">
+                <input class="order__form-group-item-input-color visually-hidden" type="checkbox" id="brown" value="brown">
+                <label class="order__form-item-label-color" for="brown">
+                  <svg width="10" height="17">
+                    <use xlink:href="img/sprite.svg#tick"></use>
+                  </svg>
+                </label>
+              </li>
+              <li class="order__form-group-item col">
+                <input class="order__form-group-item-input-color visually-hidden" type="checkbox" id="black" value="black">
+                <label class="order__form-item-label-color" for="black">
+                  <svg width="10" height="17">
+                    <use xlink:href="img/sprite.svg#tick"></use>
+                  </svg>
+                </label>
+              </li>
+            </ul>
+            <ul class="order__form-group-list row row-cols-2 row-cols-md-3">
+              <li class="order__form-group-item-size col">
+                <input class="order__form-group-item-input-size visually-hidden" type="checkbox" id="70x205" value="70x205" checked="">
+                <label class="order__form-item-label-size" for="70x205">70x205</label>
+              </li>
+              <li class="order__form-group-item-size col">
+                <input class="order__form-group-item-input-size visually-hidden" type="checkbox" id="70x205" value="70x205">
+                <label class="order__form-item-label-size" for="70x205">70x205</label>
+              </li>
+              <li class="order__form-group-item-size col">
+                <input class="order__form-group-item-input-size visually-hidden" type="checkbox" id="70x205" value="70x205">
+                <label class="order__form-item-label-size" for="70x205">70x205</label>
+              </li>
+              <li class="order__form-group-item-size col">
+                <input class="order__form-group-item-input-size visually-hidden" type="checkbox" id="70x205" value="70x205">
+                <label class="order__form-item-label-size" for="70x205">70x205</label>
+              </li>
+            </ul>
+            <p class="order__form-price col-12">2 790 р</p>
+            <button class="order__form-button col">
+              Добавить в корзину
+              <svg>
+                <use xlink:href="img/sprite.svg#arrow-small"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
+      </section>
+    </div>
+    <div class="main__order-info order-info row col-12 col-xl-2">
+      <p class="order-info__item order-info__item--article col col-xl-12">арт. 3519532</p>
+      <p class="order-info__item order-info__item--model col col-xl-12">Snow Veralinga</p>
+      <p class="order-info__item order-info__item--available col col-xl-12">В наличии</p>
+    </div>
+    <section class="info row col-12">
+      <img class="info__image col-12 col-md-2 col-xl-3" src="img/door-in-interier.png" alt="Межкомнатные двери">
+      <ul class="info__list col-12 col-md-10 col-xl-7">
+        <li class="info__item row">
+          <p class="info__item-header col-12 col-md-3">Особенности</p>
+          <p class="info__item-text col-12 col-md-9">Бескромочная технология производства с использованием PUR-клея необратимой полимеризации, профиль без пустот и ДСП.</p>
+        </li>
+        <li class="info__item row">
+          <p class="info__item-header col-12 col-md-3">Материал</p>
+          <p class="info__item-text col-12 col-md-9">Композитный мебельный щит на основе высококачественного соснового бруса и MDF.</p>
+        </li>
+        <li class="info__item row">
+          <p class="info__item-header col-12 col-md-3">Отделка</p>
+          <p class="info__item-text col-12 col-md-9">Эко Шпон — структурный антивандальный материал с защитным лаком (Германия).</p>
+        </li>
+      </ul>
+    </section>
+    <section class="complect row">
+      <h2 class="complect__header col-12 col-xl-3">Подойдёт в комплект</h2>
+      <ul class="complect__list row row-cols-2 row-cols-xl-3 col-12">
+        <li class="complect__item col row">
+          <img class="complect__item-image col col-4 align-self-start" src="img/handle-gold.png" alt="Ручка для двери">
+          <div class="complect__item-text col col-8 align-self-end">
+            <p class="complect__item-header">Фурнитура</p>
+            <p class="complect__item-text-item">Bravo A-420</p>
+            <p class="complect__item-price">820 .—</p>
+          </div>
+        </li>
+        <li class="complect__item col row">
+          <img class="complect__item-image col col-4 align-self-start" src="img/handle-grey.png" alt="Ручка для двери">
+          <div class="complect__item-text col col-8 align-self-end">
+            <p class="complect__item-header">Фурнитура</p>
+            <p class="complect__item-text-item">Bravo A-420</p>
+            <p class="complect__item-price">812 .—</p>
+          </div>
+        </li>
+        <li class="complect__item col row">
+          <img class="complect__item-image col col-4 align-self-start" src="img/handle-gold.png" alt="Ручка для двери">
+          <div class="complect__item-text col col-8 align-self-end">
+            <p class="complect__item-header">Фурнитура</p>
+            <p class="complect__item-text-item">Bravo A-420</p>
+            <p class="complect__item-price">820 .—</p>
+          </div>
+        </li>
+      </ul>
+    </section>
+    <section class="recomendations row">
+      <h2 class="recomendations__header col-12 col-xl-3">Рекомендуем посмотреть</h2>
+      <ul class="recomendations__list row row-cols-2 row-cols-xl-3 col-12">
+        <li class="recomendations__item col align-self-start row">
+          <img class="recomendations__item-image col col-4" src="img/white-door.png" alt="Межкомнатные двери">
+          <div class="recomendations__item-text col col-7">
+            <p class="recomendations__item-header">Межкомнатные двери</p>
+            <p class="recomendations__item-text-item">Порта - 29</p>
+            <p class="complect__item-price">4 320 .—</p>
+          </div>
+          <button class="recomendations__item-button col-12">Добавить в корзину
+            <svg width="27" height="16">
+              <use xlink:href="img/sprite.svg#arrow-small"></use>
+            </svg>
+          </button>
+        </li>
+        <li class="recomendations__item col align-self-start row">
+          <img class="recomendations__item-image col col-4" src="img/dark-grey-door.png" alt="Межкомнатные двери">
+          <div class="recomendations__item-text col col-7">
+            <p class="recomendations__item-header">Межкомнатные двери</p>
+            <p class="recomendations__item-text-item">Порта - 29</p>
+            <p class="recomendations__item-price">3 640 .—</p>
+          </div>
+          <button class="recomendations__item-button col-12">Добавить в корзину
+            <svg width="27" height="16">
+              <use xlink:href="img/sprite.svg#arrow-small"></use>
+            </svg>
+          </button>
+        </li>
+        <li class="recomendations__item col align-self-start row">
+          <img class="recomendations__item-image col col-4" src="img/dark-grey-door.png" alt="Межкомнатные двери">
+          <div class="recomendations__item-text col col-7">
+            <p class="recomendations__item-sale">Распродажа</p>
+            <p class="recomendations__item-header">Межкомнатные двери</p>
+            <p class="recomendations__item-text-item">Порта - 29</p>
+            <p class="recomendations__item-old-price">5 770</p>
+            <p class="recomendations__item-price">4 320 .—</p>
+          </div>
+          <button class="recomendations__item-button col-12">Добавить в корзину
+            <svg width="27" height="16">
+              <use xlink:href="img/sprite.svg#arrow-small"></use>
+            </svg>
+          </button>
+        </li>
+      </ul>
+    </section>
+  </main>
+  <footer class="footer row">
+    <div class="footer__menu-copyright col-12 col-xl-9">
+      <div class="footer__menu-copyright-wrapper row row-cols-1 row-cols-md-3 row-cols-sm-1 row-cols-xs-1">
+        <ul class="footer__menu-list col">
+          <li class="footer__menu-item">
+            <a href="#">О компании</a>
+          </li>
+          <li class="footer__menu-item">
+            <a href="#">Условия покупки</a>
+          </li>
+        </ul>
+        <ul class="footer__menu-list col">
+          <li class="footer__menu-item">
+            <a href="#">Межкомнатные двери</a>
+          </li>
+          <li class="footer__menu-item">
+            <a href="#">Входные двери</a>
+          </li>
+          <li class="footer__menu-item">
+            <a href="#">Раздвижные двери</a>
+          </li>
+          <li class="footer__menu-item">
+            <a href="#">Складные двери</a>
+          </li>
+        </ul>
+        <ul class="footer__menu-list col">
+          <li class="footer__menu-item">
+            <a href="#">Арки и порталы</a>
+          </li>
+          <li class="footer__menu-item">
+            <a href="#">Фурнитура</a>
+          </li>
+          <li class="footer__menu-item">
+            <a href="#">Специальные двери</a>
+          </li>
+        </ul>
+        <ul class="footer__copyright-list col">
+          <li class="footer__copyright-item">
+            <a href="#">2020 © ООО «БДК»</a>
+          </li>
+        </ul>
+        <ul class="footer__copyright-list col">
+          <li class="footer__copyright-item">
+            <a href="#">Политика конфиденциальности</a>
+          </li>
+        </ul>
+        <ul class="footer__copyright-list col">
+          <li class="footer__copyright-item">
+            <a href="#">Создание сайта - Синектика</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__message col-12 col-xl-3 row">
+      <a class="footer__message-button col" href="#">
+        <span class="footer__message-button-text">Написать нам сообщение
+        <svg width="154" height="16">
+          <use xlink:href="img/sprite.svg#arrow"></use>
+        </svg>
+      </span></a>
+    </div>
+  </footer>
+  <script src="js/header-menu.js"></script>
+</body>
+</html>
