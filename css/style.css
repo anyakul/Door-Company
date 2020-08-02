@@ -986,7 +986,7 @@ body {
               order: 1;
       padding-bottom: 30px;
       margin-bottom: 50px;
-      padding-left: 30px; } }
+      padding-left: 15px; } }
   @media (max-width: 768px) {
     .filter {
       padding-top: 70px; } }
@@ -1393,7 +1393,7 @@ body {
               order: 1;
       padding-bottom: 30px;
       margin-bottom: 50px;
-      padding-left: 30px; } }
+      padding-left: 15px; } }
   @media (max-width: 768px) {
     .order-info {
       padding-top: 70px; } }
@@ -1682,6 +1682,7 @@ body {
 .form__group {
   margin-bottom: 110px;
   padding-left: 0;
+  padding-right: 0;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
@@ -1693,7 +1694,8 @@ body {
   font-size: 32px;
   line-height: 37px;
   margin-bottom: 40px;
-  padding-left: 0; }
+  padding-left: 0;
+  padding-right: 0; }
   .form__group-legend--payment {
     margin-bottom: 20px; }
 
@@ -1704,7 +1706,8 @@ body {
 .form__group-label,
 .form__group-label-group,
 .form__group-text {
-  padding-left: 0; }
+  padding-left: 0;
+  padding-right: 0; }
 
 .form__group-label {
   margin-bottom: 20px; }
@@ -1715,11 +1718,13 @@ body {
 
 .form__group-list {
   list-style: none;
-  padding-left: 0; }
+  padding-left: 0;
+  padding-right: 0; }
 
 .form__group-item {
   padding-bottom: 15px;
-  padding-left: 0; }
+  padding-left: 0;
+  padding-right: 0; }
 
 .form__group-input {
   border: none;
@@ -1743,7 +1748,8 @@ body {
 .form__group-item-list-radio {
   margin-top: 26px;
   margin-bottom: 20px;
-  padding-left: 0; }
+  padding-left: 0;
+  padding-right: 0; }
   .form__group-item-list-radio--payment {
     margin: 0; }
 
@@ -1782,9 +1788,14 @@ body {
 
 .form__buttons {
   padding-left: 0;
+  padding-right: 0;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start; }
+
+@media (max-width: 768px) {
+  .form__group-text {
+    display: none; } }
 
 .form__button {
   background-color: #007dc1;
@@ -1837,7 +1848,7 @@ body {
               order: 1;
       padding-bottom: 30px;
       margin-bottom: 50px;
-      padding-left: 30px; } }
+      padding-left: 15px; } }
   @media (max-width: 768px) {
     .your-order {
       padding-top: 70px; } }
@@ -1861,6 +1872,9 @@ body {
   font-size: 24px;
   line-height: 26px;
   margin-bottom: 60px; }
+  @media (max-width: 1199px) {
+    .your-order__header {
+      margin-bottom: 30px; } }
 
 .your-order__list {
   list-style: none;
@@ -1868,18 +1882,21 @@ body {
   margin-bottom: 90px; }
   @media (max-width: 1199px) {
     .your-order__list {
-      margin-bottom: 40px; } }
+      margin-bottom: 20px; } }
 
 .your-order__item {
   margin-bottom: 25px;
   padding-left: 0; }
+  @media (max-width: 1199px) {
+    .your-order__item {
+      margin-bottom: 10px; } }
 
 .your-order__sum {
   margin-bottom: 340px;
   padding-left: 0; }
   @media (max-width: 1199px) {
     .your-order__sum {
-      margin-bottom: 50px; } }
+      margin-bottom: 20px; } }
 
 .your-order__item-name,
 .your-order__item-price,
