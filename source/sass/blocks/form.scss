@@ -1,0 +1,168 @@
+.form {
+  @media (max-width: $tablet-width) {
+    order: 2;
+  }
+}
+
+.form__it {
+  @include padding-left-element;
+  margin-left: 5%;
+  margin-bottom: 250px;
+  @media (max-width: $tablet-width) {
+    margin-bottom: 100px;
+    margin-left: 1%;
+  }
+}
+
+.form__group {
+  margin-bottom: 110px;
+  padding-left: 0;
+  align-items: center;
+  @media (max-width: $tablet-width) {
+    margin-bottom: 40px;
+  }
+}
+
+.form__group-legend {
+  @include legend;
+  margin-bottom: 40px;
+  padding-left: 0;
+  &--payment {
+    margin-bottom: 20px;
+  }
+}
+
+.form__group-item-radio {
+  @media (max-width: $tablet-width) {
+    margin-bottom: 20px;
+  }
+}
+
+.form__group-label,
+.form__group-label-group,
+.form__group-text {
+  padding-left: 0;
+}
+
+.form__group-label {
+  margin-bottom: 20px;
+}
+
+.form__group-text {
+  font-size: 12px;
+  line-height: 14px;
+}
+
+.form__group-list {
+  @include cancel-list;
+  padding-left: 0;
+}
+
+
+.form__group-item {
+  padding-bottom: 15px;
+  padding-left: 0;
+}
+
+.form__group-input {
+  border: none;
+  background-color: $beige-color;
+  width: 35px;
+  padding: 8px;
+  font-size: 12px;
+  display: block;
+}
+
+.form__group-item-list-radio {
+  margin-left: auto;
+  @include cancel-list;
+
+  &--payment {
+    margin: 0;
+  }
+}
+
+.form__group-item-radio {
+  border: 1px solid #e7e9ea;
+  padding: 20px 2em;
+  margin-right: 10px;
+}
+
+.form__group-item-list-radio {
+  margin-top: 26px;
+  margin-bottom: 20px;
+  padding-left: 0;
+
+  &--payment {
+    margin: 0;
+  }
+}
+
+.form__group-label-radio {
+  @include radio-label;
+  position: relative;
+}
+
+.form__group-item-radio-input:checked + label {
+  &:before {
+    content: "";
+    height: 20px;
+    width: 20px;
+    left: -16px;
+    background-image: url("../img/tick.svg");
+    background-repeat: no-repeat;
+    background-position: 4px;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 10;
+  }
+}
+
+.form__group-price-radio {
+  @include radio-label;
+  font-weight: bold;
+}
+
+.form__group-item-radio-label {
+  position: relative;
+
+  &:before {
+    content: "";
+    height: 20px;
+    width: 20px;
+    left: -16px;
+    background-color: $blue-color;
+    border-radius: 50%;
+    position: absolute;
+  }
+}
+
+.form__buttons {
+  padding-left: 0;
+  align-items: flex-start;
+}
+
+.form__button {
+  @include blue-button-in-form;
+  justify-content: space-between;
+  svg {
+    margin-top: 4px;
+  }
+  @media (max-width: $tablet-width) {
+    margin-bottom: 20px;
+  }
+}
+
+.form__links {
+  @include cancel-list;
+  padding-top: 6px;
+}
+
+.form__link {
+  margin-bottom: 16px;
+  a {
+    @include very-small-text;
+    color: $grey-color-in-form;
+    text-decoration: underline;
+  }
+}

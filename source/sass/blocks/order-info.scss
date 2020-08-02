@@ -1,0 +1,32 @@
+.order-info {
+  @include left-column;
+}
+
+.order-info__item {
+  @include small-text;
+
+  &--article {
+    margin-bottom: 90px;
+
+    @media (max-width: $tablet-width) {
+      margin-bottom: 0;
+    }
+  }
+
+  &--model {
+    margin-bottom: 260px;
+
+    @media (max-width: $tablet-width) {
+      margin-bottom: 0;
+    }
+  }
+
+  &--available {
+    margin-bottom: 110px;
+    text-transform: lowercase;
+
+    @media (max-width: $tablet-width) {
+      margin-bottom: 0;
+    }
+  }
+}

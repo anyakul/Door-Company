@@ -62,7 +62,7 @@
     </section>
   </header>
   <main class="main main--inner-page row">
-    <div class="main-inner-page__breadcrumbs-catalog col-12 col-xl-9 row">
+    <div class="main__breadcrumbs-catalog row col-12 col-xl-9">
       <section class="breadcrumbs col-12">
         <ul class="breadcrumbs__list row">
           <li class="breadcrumbs__item row">
@@ -206,30 +206,30 @@
         </button>
       </section>
     </div>
-    <section class="filter col-12 col-xl-3 align-items-start">
+    <section class="main__breadcrumbs-catalog-filter filter col-12 col-xl-3 align-items-start">
       <div class="filter__wrapper">
         <form class="filter__form">
           <div class="filter__form-group row">
-            <legend class="filter__form-group-legend col-12 col-md-1 col-xl-2">Размер</legend>
+            <legend class="filter__form-group-legend col-12 col-md-2 col-xl-3">Размер</legend>
             <ul class="filter__form-group-list col-12 col-md-9 col-xl-8 row">
-              <li class="filter__form-group-item-size col col-xl-12">
+              <li class="filter__form-group-item filter__form-group-item--size col-3 col-md-2 col-xl-12">
                 <input class="filter__form-group-item-input-size visually-hidden" type="checkbox" id="70x205" value="70x205" checked="">
                 <label class="filter__form-item-label-size" for="70x205">70x205</label>
               </li>
-              <li class="filter__form-group-item-size col col-xl-12">
+              <li class="filter__form-group-item filter__form-group-item--size col-3 col-md-2 col-xl-12">
                 <input class="filter__form-group-item-input-size visually-hidden" type="checkbox" id="70x205" value="70x205">
                 <label class="filter__form-item-label-size" for="70x205">70x205</label>
               </li>
-              <li class="filter__form-group-item-size col col-xl-12">
+              <li class="filter__form-group-item filter__form-group-item--size col col col-xl-12">
                 <input class="filter__form-group-item-input-size visually-hidden" type="checkbox" id="70x205" value="70x205">
                 <label class="filter__form-item-label-size" for="70x205">70x205</label>
               </li>
             </ul>
           </div>
           <div class="filter__form-group row">
-            <legend class="filter__form-group-legend col-12 col-md-1 col-xl-2">Цвет</legend>
-            <ul class="filter__form-group-list filter__form-group-list--color col-12 col-md-9 col-xl-9 row">
-              <li class="filter__form-group-item col">
+            <legend class="filter__form-group-legend col-12 col-md-2 col-xl-4">Цвет</legend>
+            <ul class="filter__form-group-list filter__form-group-list--color col-12 col-md-9 col-xl-8 row">
+              <li class="filter__form-group-item col-1 col-xl">
                 <input class="filter__form-group-item-input-color visually-hidden" type="checkbox" id="grey" value="grey" checked="">
                 <label class="filter__form-item-label-color" for="grey">
                   <svg width="10" height="17">
@@ -237,7 +237,7 @@
                   </svg>
                 </label>
               </li>
-              <li class="filter__form-group-item col">
+              <li class="filter__form-group-item col-1 col-xl">
                 <input class="filter__form-group-item-input-color visually-hidden" type="checkbox" id="brown" value="brown">
                 <label class="filter__form-item-label-color" for="brown">
                   <svg width="10" height="17">
@@ -255,9 +255,9 @@
             </ul>
           </div>
           <div class="filter__form-group row">
-            <legend class="filter__form-group-legend col-12 col-md-1 col-xl-2">Цвет</legend>
-            <ul class="filter__form-group-list filter__form-group-list--color col-12 col-md-9 col-xl-9 row">
-              <li class="filter__form-group-item col">
+            <legend class="filter__form-group-legend col-12 col-md-2 col-xl-4">Цена</legend>
+            <ul class="filter__form-group-list filter__form-group-list--color col-12 col-md-9 col-xl-8 row">
+              <li class="filter__form-group-item col-4 col-xl">
                 <label class="filter__form-item-label-price" id="from">
                   От
                 </label>
@@ -330,12 +330,12 @@
       </div>
     </div>
     <div class="footer__message col-12 col-xl-3 row">
-      <button class="footer__message-button col">
+      <a class="footer__message-button col" href="#">
         <span class="footer__message-button-text">Написать нам сообщение
         <svg width="154" height="16">
           <use xlink:href="img/sprite.svg#arrow"></use>
         </svg>
-      </span></button>
+      </span></a>
     </div>
   </footer>
   <script src="js/header-menu.js"></script>

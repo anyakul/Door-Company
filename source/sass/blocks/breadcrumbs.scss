@@ -1,12 +1,17 @@
 .breadcrumbs__list {
   @include cancel-list;
   margin-bottom: 30px;
+
+  &--card-page {
+    margin-left: auto;
+  }
 }
 .breadcrumbs__item {
   @media (max-width: $mobile-width) {
     padding-left: 0;
   }
   a {
+    @include section-text-light;
     color: $black-color;
   }
 

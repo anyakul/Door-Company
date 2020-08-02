@@ -1,9 +1,6 @@
 .about-company {
-  margin-bottom: 275px;
-
-  @media (max-width: $tablet-width) {
-    margin-bottom: 100px;
-  }
+  @include margin-from-section;
+  margin-bottom: 265px;
 }
 
 .about-company__row {

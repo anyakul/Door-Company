@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Door Company</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="header">
+    <section class="header__logo-promo-menu row">
+      <a class="header__logo-link header__logo-link--innner-page row col-12 col-xl-3" href="index.html">
+        <img class="header__logo-image col-4" width="88" height="81" src="img/logo.png" alt="logo">
+        <div class="header__text-wrapper col-8">
+          <p class="header__logo-header header__logo-header--inner-page">Белгородская дверная компания</p>
+          <span class="header__logo-text header__logo-text--inner-page">Официальный интернет-магазин производства</span>
+        </div>
+      </a>
+      <button class="header__toggle" type="button">
+        <svg width="40" height="20">
+          <use xlink:href="img/sprite.svg#menu"></use>
+        </svg>
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+      <a class="header__cart" href="#">
+        <svg width="30" height="30">
+          <use xlink:href="img/sprite.svg#cart"></use>
+        </svg>
+      </a>
+      <a class="header__search" href="#">
+        <svg>
+          <use xlink:href="img/sprite.svg#search"></use>
+        </svg>
+      </a>
+      <div class="header__menu header__menu--closed header__menu--inner-page col col-12 col-xl-9">
+        <ul class="header__menu-list header__menu-list--inner-page row row-cols-1 row-cols-md-3 ">
+          <li class="header__menu-item header__menu-item--inner-page col col-xl col-12">
+            <a href="#">Межкомнатные</a>
+          </li>
+          <li class="header__menu-item header__menu-item--inner-page col col-xl col-12">
+            <a href="#">Входные</a>
+          </li>
+          <li class="header__menu-item header__menu-item--inner-page col col-xl col-12">
+            <a href="#">Раздвижные</a>
+          </li>
+          <li class="header__menu-item header__menu-item--inner-page col col-xl col-12">
+            <a href="#">Складные</a>
+          </li>
+          <li class="header__menu-item header__menu-item--inner-page col col-xl col-12">
+            <a href="#">Арки и порталы</a>
+          </li>
+          <li class="header__menu-item header__menu-item--inner-page col col-xl col-12">
+            <a href="#">Фурнитура</a>
+          </li>
+          <li class="header__menu-item header__menu-item--inner-page col col-xl col-12">
+            <a href="#">Специальные</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </header>
+  <main class="main main--inner-page row">
+    <div class="form col-12 col-xl-8 row">
+      <form class="form__it row col-12">
+        <fieldset class="form__group col-12 row">
+          <legend class="form__group-legend col-12">Покупатель</legend>
+          <ul class="form__group-list col-12 row">
+            <li class="form__group-item col-12 row">
+              <label class="form__group-label col-12 col-md-2" for="name">Ф.И.О.</label>
+              <input class="form__group-input col-12 col-md-9" type="text" id="name">
+            </li>
+            <li class="form__group-item col-12 row">
+              <label class="form__group-label col-12 col-md-2" for="phone">Телефон</label>
+              <input class="form__group-input col-12 col-md-9" type="phone" id="phone">
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="form__group col-12 row">
+          <legend class="form__group-legend col-12">Доставка</legend>
+          <ul class="form__group-list row col-12">
+            <li class="form__group-item row col-12">
+              <label class="form__group-label-group col-12 col-md-2 row" for="city">
+                <span class="form__group-label col-12">Город</span>
+                <span class="form__group-text col-12">Населенный пункт</span>
+              </label>
+              <input class="form__group-input col-12 col-md-9" type="text" id="city" name="city">
+            </li>
+            <li class="form__group-item row col-12">
+              <ul class="form__group-item-list-radio row col-12 col-md-10">
+                <li class="form__group-item-radio col-12 col-md-5">
+                  <input class="form__group-item-radio-input visually-hidden" type="radio" value="delivery" id="delivery" checked>
+                  <label class="form__group-item-radio-label row" for="delivery">
+                    <span class="form__group-label-radio col-12">Курьерской службой</span>
+                    <span class="form__group-price-radio col-12">215 руб.</span>
+                  </label>
+                </li>
+                <li class="form__group-item-radio col-12 col-md-5">
+                  <input class="form__group-item-radio-input visually-hidden" type="radio" value="sdek" id="sdek">
+                  <label class="form__group-item-radio-label row" for="sdek">
+                    <span class="form__group-label-radio col-12">Получение в пункте выдачи (СДЭК)</span>
+                    <span class="form__group-price-radio col-12">350 руб.</span>
+                  </label>
+                </li>
+              </ul>
+            </li>
+            <li class="form__group-item row col-12">
+              <label class="form__group-label col-12 col-md-2" for="address">Адрес</label>
+              <input class="form__group-input col-12 col-md-9" type="text" id="address">
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="form__group col-12 row">
+          <ul class="form__group-list row col-12">
+            <li class="form__group-item row col-12">
+              <label class="form__group-legend form__group-legend--payment align-self-end col-12 col-md-2">Оплата</label>
+              <ul class="form__group-item-list-radio form__group-item-list-radio--payment row align-self-start col-12 col-md-10">
+                <li class="form__group-item-radio form__group-item-radio col-12 col-md-5">
+                  <input class="form__group-item-radio-input visually-hidden" type="radio" value="delivery" id="delivery" checked>
+                  <label class="form__group-item-radio-label row" for="delivery">
+                    <span class="form__group-label-radio col-12">online-оплата картой</span>
+                  </label>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </fieldset>
+        <div class="form__buttons row col-12">
+          <button class="form__button row col-12 col-md-7">
+            <span class="form__button-text col-8">Оформить заказ</span>
+            <svg class="col-3" height="20">
+              <use xlink:href="img/sprite.svg#arrow-middle"></use>
+            </svg>
+          </button>
+          <ul class="form__links row col-12 col-md-5">
+            <li class="form__link col col-xl-12">
+              <a href="#">Посмотреть товары в заказе</a>
+            </li>
+            <li class="form__link col col-xl-12">
+              <a href="#">Добавить комментарий</a>
+            </li>
+          </ul>
+        </div>
+      </form>
+    </div>
+    <section class="your-order row col-12 col-xl-4">
+      <h2 class="your-order__header col-12">Ваш заказ</h2>
+      <ul class="your-order__list row col-12">
+        <li class="your-order__item row col-12">
+          <p class="your-order__item-name col-8">Межкомнатная дверь VEGA</p>
+          <p class="your-order__item-price col-4">2000 р.</p>
+        </li>
+        <li class="your-order__item row col-12">
+          <p class="your-order__item-name col-8">Фурнитура Snow</p>
+          <p class="your-order__item-price col-4">790 р.</p>
+        </li>
+      </ul>
+      <div class="your-order__sum row col-12">
+        <p class="your-order__sum-header col-12">Всего</p>
+        <p class="your-order__sum-number col-12">2 790 р.</p>
+      </div>
+    </section>
+  </main>
+  <footer class="footer row">
+    <div class="footer__menu-copyright col-12 col-xl-9">
+      <div class="footer__menu-copyright-wrapper row row-cols-1 row-cols-md-3 row-cols-sm-1 row-cols-xs-1">
+        <ul class="footer__menu-list col">
+          <li class="footer__menu-item">
+            <a href="#">О компании</a>
+          </li>
+          <li class="footer__menu-item">
+            <a href="#">Условия покупки</a>
+          </li>
+        </ul>
+        <ul class="footer__menu-list col">
+          <li class="footer__menu-item">
+            <a href="#">Межкомнатные двери</a>
+          </li>
+          <li class="footer__menu-item">
+            <a href="#">Входные двери</a>
+          </li>
+          <li class="footer__menu-item">
+            <a href="#">Раздвижные двери</a>
+          </li>
+          <li class="footer__menu-item">
+            <a href="#">Складные двери</a>
+          </li>
+        </ul>
+        <ul class="footer__menu-list col">
+          <li class="footer__menu-item">
+            <a href="#">Арки и порталы</a>
+          </li>
+          <li class="footer__menu-item">
+            <a href="#">Фурнитура</a>
+          </li>
+          <li class="footer__menu-item">
+            <a href="#">Специальные двери</a>
+          </li>
+        </ul>
+        <ul class="footer__copyright-list col">
+          <li class="footer__copyright-item">
+            <a href="#">2020 © ООО «БДК»</a>
+          </li>
+        </ul>
+        <ul class="footer__copyright-list col">
+          <li class="footer__copyright-item">
+            <a href="#">Политика конфиденциальности</a>
+          </li>
+        </ul>
+        <ul class="footer__copyright-list col">
+          <li class="footer__copyright-item">
+            <a href="#">Создание сайта - Синектика</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__message col-12 col-xl-3 row">
+      <a class="footer__message-button col" href="#">
+        <span class="footer__message-button-text">Написать нам сообщение
+        <svg width="154" height="16">
+          <use xlink:href="img/sprite.svg#arrow"></use>
+        </svg>
+      </a>
+    </div>
+  </footer>
+  <script src="js/header-menu.js"></script>
+</body>
+</html>

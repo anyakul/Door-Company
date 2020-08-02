@@ -1,18 +1,12 @@
 .popular-goods {
   @include padding-left-element;
   @include margin-from-section;
-  padding-bottom: 90px;
-
-  @media (max-width: $mobile-width) {
-    padding-bottom: 0;
-  }
 }
 
 .popular-goods__header {
   @include section-header;
   @include margin-from-header;
   width: 20%;
-  margin-bottom: 152px;
 
   @media (max-width: $tablet-width) {
     width: 100%;
@@ -27,14 +21,11 @@
   @include cancel-list;
   @include margin-from-list;
   min-height: 10rem;
+}
 
-  @media (max-width: $mobile-width) {
-    margin-bottom: 50px;
-    padding-left: 1%;
-  }
-
-  @media (max-width: $tablet-width) {
-    margin-bottom: 40px;
+@media (max-width: $tablet-width) {
+  .align-self-end {
+    align-self: flex-start!important;
   }
 }
 
@@ -51,7 +42,6 @@
 
   @media (max-width: $mobile-width) {
     margin: 0;
-    padding-left: 1%;
   }
 
   &:nth-child(1),
@@ -68,7 +58,7 @@
 .popular-goods__item-image {
   margin-right: 0.1em;
   padding-left: 0;
-
+  height: 100%;
   @media (max-width: $mobile-width) {
     margin-bottom: 0;
     padding-right: 0;
@@ -89,6 +79,7 @@
   @media (max-width: $mobile-width) {
     font-size: 12px;
     margin-top: 0;
+    margin-bottom: 0.2rem;
   }
 }
 
@@ -98,30 +89,31 @@
 
   @media (max-width: $mobile-width) {
     font-size: 12px;
-    padding-left: 0;
+    line-height: 14px;
   }
 }
 
 .popular-goods__item-price {
   @include item-price;
+  margin-bottom: 0.2rem;
 }
 
 .popular-goods__item-old-price {
   @include item-old-price;
+  margin-bottom: 0.2rem;
 }
 
 .popular-goods__button {
   @include dark-link;
   @include section-header;
   @include margin-from-button;
-  margin-bottom: 100px;
   margin-left: auto;
   width: 37%;
   display: block;
+  padding-left: 0;
 
   @media (max-width: $tablet-width) {
     width: 98%;
-    margin-left: 1%;
   }
 
   @media (max-width: $mobile-width) {

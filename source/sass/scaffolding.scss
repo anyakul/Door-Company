@@ -24,15 +24,38 @@ body {
   margin: 0;
 }
 
+.main {
+  align-items: flex-start;
+}
 
-.main-inner-page__breadcrumbs-catalog {
+.main__filter {
+  @media (max-width: $tablet-width) {
+    order: 1;
+  }
+}
+
+.main__breadcrumbs-catalog {
   padding-left: 2%;
+
+  @media (max-width: $tablet-width) {
+    order: 2;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-top: 100px;
+  }
+}
+
+.main__breadcrumbs-order {
+  padding-left: 7%;
 
   @media (max-width: $tablet-width) {
     padding-left: 0;
     order: 2;
   }
 }
+
+
 
 @font-face {
   font-family: "Robotocondensed";

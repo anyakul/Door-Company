@@ -1,6 +1,5 @@
 .header {
-  margin-bottom: 130px;
-
+  @include margin-from-section;
   @media (max-width: $tablet-width) {
     position: relative;
     margin-bottom: 60px;
@@ -22,6 +21,7 @@
 .header__logo-header {
   font-size: 24px;
   line-height: 26px;
+  fot-family: $font-light;
 
   @media (max-width: $tablet-width) {
     display: none;
@@ -40,13 +40,12 @@
     position: fixed;
     background-color: $white-color;
     z-index: 30;
-    padding: 20px 2% 20px 120px;
+    padding: 20px 2% 20px 100px;
     order: 1;
   }
 
   @media (max-width: $mobile-width) {
     padding-top: 20px;
-    padding-left: 70px;
   }
 
   &--inner-page {
@@ -195,7 +194,7 @@
     color: $white-color;
     @include center-absolute-element
     width: 64px;
-    height: 64px;
+    height: 30px;
   }
 }
 
@@ -248,7 +247,7 @@
       order: 2;
       position: fixed;
       z-index: 40;
-      top: 100px;
+      top: 70px;
 
       &--no-js {
         display: block;

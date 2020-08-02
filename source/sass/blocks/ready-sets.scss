@@ -1,9 +1,8 @@
 .ready-sets {
   @include padding-left-element;
-  margin-bottom: 100px;
+  @include margin-from-section;
 
   @media (max-width: $tablet-width) {
-    margin-bottom: 50px;
     margin-left: 0;
   }
 }
@@ -55,6 +54,7 @@
 .ready-sets__item-image {
   margin-bottom: 20px;
   padding-left: 0;
+  padding-right: 0;
 }
 
 .ready-sets__item-text {

@@ -1,31 +1,5 @@
 .filter {
-  position: relative;
-  width: 600px;
-  padding-top: 30px;
-  padding-left: 4%;
-    align-itmems: flex-start;
-  @media (max-width: $tablet-width) {
-    background-color: $beige-color;
-    padding-top: 75px;
-    order: 1;
-  padding-bottom: 50px;
-  margin-bottom: 50px;
-
-  }
-
-
-    &::before {
-      @media (min-width: $desktop-width) {
-        content: "";
-        right: 0;
-        top: -50%;
-        width: 100%;
-        height: 76%;
-        position: absolute;
-        background-color: $beige-color;
-        z-index: -1;
-      }
-    }
+  @include left-column;
 }
 
 .filter__wrapper {
@@ -52,36 +26,7 @@
 }
 
 .filter__form-item-label-color {
-  width: 35px;
-  height: 35px;
-  margin-bottom: 0;
-  display: block;
-  position: relative;
-
-  svg {
-    @include center-absolute-element;
-    width: 20px;
-    height: 25px;
-    display: none;
-  }
-
-  &[for="black"] {
-    background-color: $black-color;
-  }
-
-  &[for="brown"] {
-    background-color: $brown-color;
-  }
-
-  &[for="grey"] {
-    background-color: $grey-color;
-  }
-}
-
-.filter__form-group-item-input-color {
-  &:checked + label svg {
-    display: block;
-  }
+  @include label-color;
 }
 
 
@@ -97,6 +42,7 @@
 
 .filter__form-group-list {
   @include cancel-list;
+  justify-content: space-between;
 
   @media (max-width: $mobile-width) {
     padding-left: 0;
@@ -109,22 +55,36 @@
   color: $blue-color;
   width: 100%;
   border: none;
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.filter__form-group-list {
+  padding: 0;
 }
 
 .filter__form-group-item {
   margin-bottom: 25px;
   margin-right: 1em;
-
+  padding-left: 0;
   &--size {
     text-align: right;
-  margin-left: auto;
+    margin-left: auto;
+    width: 60px;
+
+
+    @media (max-width: $tablet-width) {
+      text-align: left;
+    }
   }
 }
 
 .filter__form-group-item-size {
-  margin-bottom: 25px;
+  margin-bottom: 10px;
   margin-right: 10px;
   text-align: right;
+  padding-left: 0;
+  padding-right: 0;
 
   @media (max-width: $tablet-width) {
     text-align: left;

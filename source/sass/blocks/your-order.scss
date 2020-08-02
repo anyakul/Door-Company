@@ -1,0 +1,47 @@
+.your-order {
+  @include left-column;
+  @media (max-width: $tablet-width) {
+    order: 1;
+  }
+}
+
+.your-order__header {
+  @include section-item-header;
+  margin-bottom: 60px;
+}
+
+.your-order__list {
+  @include cancel-list;
+  padding-left: 0;
+  margin-bottom: 90px;
+  @media (max-width: $tablet-width) {
+    margin-bottom: 40px;
+  }
+}
+
+.your-order__item {
+  margin-bottom: 25px;
+  padding-left: 0;
+}
+
+.your-order__sum {
+  margin-bottom: 340px;
+  padding-left: 0;
+  @media (max-width: $tablet-width) {
+    margin-bottom: 50px;
+  }
+}
+
+.your-order__item-name,
+.your-order__item-price,
+.your-order__sum-header {
+  @include small-text;
+}
+
+.your-order__item-price {
+  text-align: right;
+}
+
+.your-order__sum-number {
+  @include section-header;
+}
