@@ -4,6 +4,11 @@
 
 .filter__wrapper {
   margin-right: 5%;
+  margin-top: 170px;
+
+  @media (max-width: $tablet-width) {
+    margin-top: 50px;
+  }
 }
 
 .filter__form-group {
@@ -11,6 +16,14 @@
 
   @media (max-width: $tablet-width) {
     margin-bottom: 20px;
+  }
+
+  &:last-of-type {
+    margin-bottom: 117px;
+
+    @media (max-width: $tablet-width) {
+      margin-bottom: 20px;
+    }
   }
 }
 
@@ -37,7 +50,7 @@
 }
 
 .filter__form-group-legend--price {
-  padding-top: 20px;
+  padding-top: 25px;
 }
 
 .filter__form-group-list {
@@ -65,7 +78,6 @@
 
 .filter__form-group-item {
   margin-bottom: 25px;
-  margin-right: 1em;
   padding-left: 0;
   &--size {
     text-align: right;
@@ -99,6 +111,7 @@
   padding: 15px;
   margin-left: auto;
 
+
   @media (max-width: $mobile-width) {
     margin-left: 0;
     font-size: 14px;
@@ -108,6 +121,11 @@
 .filter__form-group-item-input-size:checked + label {
   color: $white-color;
   background-color: $blue-color;
+}
+
+
+.filter__form-group-item-input-color {
+  @include input-color;
 }
 
 .filter__button {

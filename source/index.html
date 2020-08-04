@@ -11,41 +11,54 @@
 <body>
   <header class="header">
     <section class="header__logo-promo-menu row">
-      <a class="header__logo-link col-xl-4 col-lg-12" href="index.html">
-        <img class="header__logo-image" width="88" src="img/logo.png" alt="logo">
-        <p class="header__logo-header">Белгородская дверная компания</p>
-        <span class="header__logo-text">Официальный интернет-магазин производства</span>
-      </a>
-      <a class="header__cart col-12 col-md-1" href="form.html">
-        <svg width="29" height="25">
-          <use xlink:href="img/sprite.svg#cart"></use>
-        </svg>
-      </a>
-      <a class="header__search col-12 col-md-1" href="#">
-        <svg>
-          <use xlink:href="img/sprite.svg#search"></use>
-        </svg>
-      </a>
-      <div class="header__promo col-xl-8 col-lg-12">
-        <div class="header__promo-wrapper">
-          <div class="header__promo-row row row-cols-2">
+      <h2 class="visually-hidden">Хедер</h2>
+      <div class="header__logo-cart-search row col-12 col-xl-4">
+        <div class="header__logo-cart-search-wrapper row col-12 col-xl-12">
+          <a class="header__logo-link row col-3 col-xl-12" href="index.html">
+            <div class="header__logo-image-wrapper col-5 col-xl-12">
+              <img class="header__logo-image" width="88" src="img/logo.png" alt="logo">
+            </div>
+            <p class="header__logo-header col-12">Белгородская дверная компания</p>
+            <span class="header__logo-text col-12">Официальный интернет-магазин производства</span>
+          </a>
+          <ul class="header__cart-search row col-3 col-md-2">
+            <li class="header__cart-search-item col">
+              <a class="header__cart align-self-end" href="form.html">
+                <svg width="29" height="30">
+                  <use xlink:href="img/sprite.svg#cart"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="header__cart-search-item align-self-start col">
+              <a class="header__search" href="#">
+                <svg width="29" height="30">
+                  <use xlink:href="img/sprite.svg#search"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="header__promo row col-12 col-xl-8">
+        <div class="header__promo-wrapper row col-12">
+          <div class="header__promo-row row col-12 col-xl-11">
             <form class="header__promo-search-form col-12 col-xl-8 row">
-              <input class="header__promo-search-form-input col-12 col-xl-11" type="text" placeholder="Поиск">
-              <button class="header__promo-search-form-button">
+              <input class="header__promo-search-form-input col-xl-11 col-12" type="text" placeholder="Поиск">
+              <button class="header__promo-search-form-button col-1">
                 <svg width="26" height="26">
                   <use xlink:href="img/sprite.svg#search"></use>
                 </svg>
               </button>
             </form>
             <a class="header__promo-cart col-1" href="form.html">
-              <svg width="40" height="40">
+              <svg width="70" height="70">
                 <use xlink:href="img/sprite.svg#cart"></use>
               </svg>
             </a>
             <div class="w-100"></div>
-            <div class="header__promo-text-item-button col-xl-7 col-md-12 col-12">
-              <p class="header__promo-text-item">Новинка! Фурнитура bravo</p>
-              <a class="header__promo-text-button">
+            <div class="header__promo-text-item-button row col-xl-7 col-md-12 col-12">
+              <a class="header__promo-text-item col-12 col-md-6 col-xl-12" href="#">Новинка! Фурнитура bravo</a>
+              <a class="header__promo-text-button col-12 col-md-6 col-xl-12">
                 <svg width="154" height="16">
                   <use xlink:href="img/sprite.svg#arrow"></use>
                 </svg>
@@ -55,38 +68,38 @@
         </div>
       </div>
       <button class="header__toggle" type="button">
-        <svg width="40" height="20">
+        <svg width="40" height="40">
           <use xlink:href="img/sprite.svg#menu"></use>
         </svg>
         <span class="visually-hidden">Открыть меню</span>
       </button>
-      <div class="header__menu header__menu--no-js header__menu--closed col col-xl-6 col-lg-12">
-        <ul class="header__menu-list row row-cols-1 row-cols-lg-2">
-          <li class="header__menu-item col col12">
+      <div class="header__menu header__menu--no-js header__menu--closed row col col-xl-6">
+        <ul class="header__menu-list row row-cols-1 row-cols-md-2 col-11">
+          <li class="header__menu-item col">
             <a href="card.html">Межкомнатные двери</a>
           </li>
-          <li class="header__menu-item col col12">
+          <li class="header__menu-item col">
             <a href="#">Арки и порталы</a>
           </li>
-          <li class="header__menu-item col col12">
+          <li class="header__menu-item col">
             <a href="#">Входные двери</a>
           </li>
-          <li class="header__menu-item col col12">
+          <li class="header__menu-item col">
             <a href="#">Фурнитура</a>
           </li>
-          <li class="header__menu-item col col12">
+          <li class="header__menu-item col">
             <a href="#">Раздвижные двери</a>
           </li>
-          <li class="header__menu-item col col12">
+          <li class="header__menu-item col">
             <a href="#">Специальные двери</a>
           </li>
-          <li class="header__menu-item col col12">
+          <li class="header__menu-item col">
             <a href="#">Складные двери</a>
           </li>
         </ul>
       </div>
-      <div class="header__info col-xl-6 col-lg-12">
-        <ul class="header__info-list row row-cols-1 row-cols-md-2">
+      <div class="header__info row col-xl-5">
+        <ul class="header__info-list row row-cols-1 row-cols-md-2 col-12">
           <li class="header__info-item col">
             <p class="header__info-item-header">215+</p>
             <p class="header__info-item-text">Видов дверей в нашем каталоге</p>
@@ -100,9 +113,9 @@
     </section>
   </header>
   <main class="main">
-    <section class="popular-goods">
-      <h2 class="popular-goods__header col">Популярные модели</h2>
-      <ul class="popular-goods__list row row-cols-2 row-cols-xl-3 row-cols-md-2">
+    <section class="popular-goods row">
+      <h2 class="popular-goods__header col-12 col-xl-3">Популярные модели</h2>
+      <ul class="popular-goods__list row row-cols-2 row-cols-xl-3 col-12 col-xl-12">
         <li class="popular-goods__item col align-self-start row">
           <img class="popular-goods__item-image col col-4" src="img/white-door.png" alt="Межкомнатные двери">
           <div class="popular-goods__item-text col col-7">
@@ -154,39 +167,39 @@
           </div>
         </li>
       </ul>
-      <a class="popular-goods__button col" href="catalog.html">Посмотреть весь каталог
+      <a class="popular-goods__button col-12 col-xl-6" href="catalog.html">Посмотреть весь каталог
         <svg width="154" height="16">
           <use xlink:href="img/sprite.svg#arrow"></use>
         </svg>
       </a>
     </section>
     <section class="about-company row">
-      <div class="about-company__row row row-cols-lg-1 row-cols-xs-1">
-        <div class="about-company__text col-xl-10 align-self-start">
-          <div class="about-company__text-wrapper col">
-            <h2 class="about-company__header">О компании</h2>
-            <p class="about-company__text-item">Наша компания начала оптовые поставки межкомнатных дверей для комплектации строительных объектов еще в 2005 году.</p>
-            <p class="about-company__text-item">За это время наши сотрудники накопили огромный опыт в комплектации объектов дверями и дверными блоками, компания установила плодотворное сотрудничество с целым рядом строительных компаний, что позволяет поставлять двери непосредственно застройщику. Нас не пугают заказы на производство дверей с нестандартными решениями.</p>
+      <div class="about-company__row row row-cols-lg-1 row-cols-xs-1 col-12">
+        <div class="about-company__text row col-12 col-xl-10 align-self-start">
+          <div class="about-company__text-wrapper row col">
+            <h2 class="about-company__header col-12 col-xl-10">О компании</h2>
+            <p class="about-company__text-item col-12 col-xl-10">Наша компания начала оптовые поставки межкомнатных дверей для комплектации строительных объектов еще в 2005 году.</p>
+            <p class="about-company__text-item col-12 col-xl-10">За это время наши сотрудники накопили огромный опыт в комплектации объектов дверями и дверными блоками, компания установила плодотворное сотрудничество с целым рядом строительных компаний, что позволяет поставлять двери непосредственно застройщику. Нас не пугают заказы на производство дверей с нестандартными решениями.</p>
             <ul class="about-company__list row">
-              <li class="about-company__item col">
-                <p class="about-company__item-number">10</p>
-                <p class="about-company__item-text">Лет успешной работы</p>
+              <li class="about-company__item row col-12 col-md">
+                <p class="about-company__item-number col-2 col-md-12">10</p>
+                <p class="about-company__item-text col-10 col-md-12">Лет успешной работы</p>
               </li>
-              <li class="about-company__item col">
-                <p class="about-company__item-number">37</p>
-                <p class="about-company__item-text">Сотрудников в штате</p>
+              <li class="about-company__item row col-12 col-md">
+                <p class="about-company__item-number col-2 col-xl-12">37</p>
+                <p class="about-company__item-text col-10 col-md-12">Сотрудников в штате</p>
               </li>
             </ul>
           </div>
         </div>
-        <img class="about-company__image col-xl-5 align-self-end" src="img/factory.png" alt="Производство">
+        <img class="about-company__image col-12 col-xl-4 align-self-end" src="img/factory.png" alt="Производство">
       </div>
     </section>
-    <section class="ready-sets">
-      <h2 class="ready-sets__header col">Готовые комплекты</h2>
-      <p class="ready-sets__sub-header col">Входные двери + межкомнатные</p>
-      <p class="ready-sets__text col">Мы производим серии дверей в едином дизайне - входные дверь и межкомнатные. Наша компания начала оптовые поставки межкомнатных дверей для комплектации строительных объектов еще в 2005 году.</p>
-      <ul class="ready-sets__list row">
+    <section class="ready-sets row col-12 col-xl-10">
+      <h2 class="ready-sets__header col-12 col-xl-7">Готовые комплекты</h2>
+      <p class="ready-sets__sub-header col-12 col-xl-7">Входные двери + межкомнатные</p>
+      <p class="ready-sets__text col-12 col-xl-7">Мы производим серии дверей в едином дизайне - входные дверь и межкомнатные. Наша компания начала оптовые поставки межкомнатных дверей для комплектации строительных объектов еще в 2005 году.</p>
+      <ul class="ready-sets__list row col-12 col-xl-11">
         <li class="ready-sets__item col-10 col-md-8 col-xl-5 row">
           <img class="ready-sets__item-image col-12" src="img/snegir-home.png" alt="snegir home">
           <p class="ready-sets__item-text col-12">SNEGIR HOME</p>
@@ -257,7 +270,7 @@
     </div>
     <div class="footer__message col-12 col-xl-3 row">
       <a class="footer__message-button col" href="#">
-        <span class="footer__message-button-text">Написать нам сообщение
+        <span class="footer__message-button-text">Написать нам сообщение</span>
         <svg width="154" height="16">
           <use xlink:href="img/sprite.svg#arrow"></use>
         </svg>

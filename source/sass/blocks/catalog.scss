@@ -7,17 +7,18 @@
 .catalog__header {
   @include section-header;
   @include margin-from-header;
+  @include null-padding;
+  padding-left: 15px;
 }
 
 .catalog__list {
   @include cancel-list;
-  padding-left: 0;
-  margin-left: 0;
-  padding-right: 0;
+  @include null-padding;
+  padding-left: 15px;
 }
 
 .catalog__item {
-  margin-bottom: 70px;
+  margin-bottom: 4.375em;
   border: 1px solid $white-color;
   padding: 70px 0 0 0;
 
@@ -39,7 +40,7 @@
 
 .catalog__item-text {
   margin-top: auto;
-  margin-bottom: 20px;
+  margin-bottom: 35px;
 }
 
 .catalog__item-sale {
@@ -49,6 +50,7 @@
   background-color: $blue-color;
   text-align: center;
   color: $white-color;
+  margin-bottom: 15px;
 
   @media (max-width: $mobile-width) {
     display: none;
@@ -58,58 +60,61 @@
 .catalog__item-header,
 .catalog__item-text-item {
   @include section-text;
+  margin-bottom: 0;
 
   @media (max-width: $mobile-width) {
-    font-size: 12px;
-    line-height: 16px;
+    font-size: 0.75em;
+    line-height: 1em;
     padding-left: 0;
-    margin-bottom: 5px;
+    margin-bottom: 0.3125em;
   }
+}
+
+.catalog__item-text-item {
+  margin-bottom: 1.3rem;
 }
 
 .catalog__item-price {
   @include item-price;
+  margin-bottom: 0;
 }
 
 .catalog__item-old-price {
   @include item-old-price;
+  margin-bottom: 0;
 
   @media (max-width: $mobile-width) {
-    margin-bottom: 5px;
+    margin-bottom: 0.3125em;
   }
 }
 
 
 .catalog__item-image {
-  margin-bottom: 35px;
+  @include null-padding;
+  margin-bottom: 2.188em;
   padding-right: 0;
-  height: 100%;
 
   @media (max-width: $mobile-width) {
     margin-bottom: 10px;
-  padding-left: 5px;
+  padding-left: 0.3125em;
   }
 }
 
 .catalog__item-button {
   margin: 0 auto;
-  padding: 20px 50px;
+  padding: 1em 3em;
   background-color: transparent;
   color: $white-color;
   border: 1px solid $white-color;
   text-align: left;
 
   @media (max-width: $tablet-width) {
-    font-size: 14px;
-    line-height: 16px;
+    font-size: 0.875em;
+    line-height: 1em;
     padding: 10px;
   }
 
   @media (max-width: $mobile-width) {
-    font-size: 14px;
-    line-height: 16px;
-    padding: 10px;
-
     svg {
       display: none;
     }
@@ -122,23 +127,22 @@
   }
 
   svg {
-    margin-left: 10px;
-    margin-top: 10px;
+    margin-left: 0.625em;
+    margin-top: 0.625em;
   }
 }
 
 .catalog__button {
+  @include section-item-header;
   @include cancel-button;
-  margin-bottom: 200px;
+  margin-bottom: 12.5em;
   text-align: center;
   width: 100%;
-  font-size: 24px;
-  line-height: 28px;
   color: $grey-color;
   text-transform: uppercase;
 
   @media (max-width: $tablet-width) {
-    margin-bottom: 50px;
+    margin-bottom: 3.125em;
     svg {
       display: none;
     }
@@ -146,5 +150,5 @@
 }
 
 .catalog__button-text {
-  margin-bottom: 35px;
+  margin-bottom: 2.188em;
 }

@@ -1,15 +1,16 @@
+.breadcrumbs {
+  padding-left: 15px;
+}
+
 .breadcrumbs__list {
   @include cancel-list;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 
   &--card-page {
     margin-left: auto;
   }
 }
 .breadcrumbs__item {
-  @media (max-width: $mobile-width) {
-    padding-left: 0;
-  }
   a {
     @include section-text-light;
     color: $black-color;
@@ -18,4 +19,9 @@
   svg {
     color: $black-color;
   }
+}
+
+
+.breadcrumbs__item-link {
+  padding-left: 0;
 }

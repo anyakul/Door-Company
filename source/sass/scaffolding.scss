@@ -16,16 +16,23 @@
   overflow: hidden;
 }
 
-body {
-  font-family: "Robotocondensed", "Arial", "sens-serif";
-}
-
 .row {
   margin: 0;
 }
 
+body {
+  font-family: "Robotocondensed", "Arial", "sens-serif";
+}
+
+.container {
+  max-width: 10000px;
+}
+
 .main {
   align-items: flex-start;
+  @media (min-width: $mobile-width) {
+    padding-left: 0;
+  }
 }
 
 .main__filter {
@@ -39,10 +46,6 @@ body {
 
   @media (max-width: $tablet-width) {
     order: 2;
-  }
-
-  @media (max-width: $mobile-width) {
-    margin-top: 100px;
   }
 }
 

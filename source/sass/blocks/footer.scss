@@ -67,9 +67,19 @@
   margin-bottom: 120px;
 
   @media (max-width: $tablet-width) {
+    @include null-margin;
+    padding-left: 30px;
     margin-top: 0px;
     margin-bottom: 40px;
     order: 1;
+  }
+}
+
+.footer__menu-copyright-wrapper {
+
+  @media (max-width: $tablet-width) {
+    @include null-margin;
+    padding-left: 30px;
   }
 }
 
@@ -87,6 +97,7 @@
     margin-bottom: 20px;
     order: 1;
     margin-left: 0;
+    padding-left: 0;
   }
 
   svg {

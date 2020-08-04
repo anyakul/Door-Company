@@ -1,26 +1,26 @@
 .popular-goods {
-  @include padding-left-element;
+  @include margin-left;
   @include margin-from-section;
 }
 
 .popular-goods__header {
   @include section-header;
   @include margin-from-header;
-  width: 20%;
-
-  @media (max-width: $tablet-width) {
-    width: 100%;
-  }
-
+  padding-left: 30px;
   @media (max-width: $mobile-width) {
-    padding-left: 15px;
+    margin-left: 0;
+    margin-right: 0;
   }
 }
 
 .popular-goods__list {
   @include cancel-list;
+  margin: auto;
   @include margin-from-list;
-  min-height: 10rem;
+  padding-left: 15px;
+  @media (max-width: $mobile-width) {
+    margin-right: 0;
+  }
 }
 
 @media (max-width: $tablet-width) {
@@ -108,16 +108,11 @@
   @include section-header;
   @include margin-from-button;
   margin-left: auto;
-  width: 37%;
   display: block;
-  padding-left: 0;
-
-  @media (max-width: $tablet-width) {
-    width: 98%;
-  }
+  padding-left: 30px;
 
   @media (max-width: $mobile-width) {
-    font-size: 14px;
+    margin-bottom: 0;
   }
 
   svg {
