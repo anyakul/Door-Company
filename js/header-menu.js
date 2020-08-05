@@ -14,6 +14,3 @@ navToggle.addEventListener('click', function () {
     navMain.classList.remove('header__nav--closed');
   }
 });
-
-
-console.log(navToggle);
