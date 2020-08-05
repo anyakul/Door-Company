@@ -451,23 +451,17 @@ padding-left: 0;
       .header__menu {
         display: block;
       }
-        .header__icon-burger {
-          display: none;
-        }
-        .header__icon-cross {
-          display: block;
-        }
+      .header__toggle {
+        background-image: url(../img/cross.svg);
+      }
     }
     &--closed {
       .header__menu {
         display: none;
       }
-        .header__icon-burger {
-          display: block;
-        }
-        .header__icon-cross {
-          display: none;
-        }
+      .header__toggle {
+        background-image: url(../img/burger.svg);
+      }
     }
   }
 }
@@ -477,7 +471,7 @@ padding-left: 0;
 .header__toggle {
   display: none;
   width: 25px;
-  height: 15px;
+  height: 25px;
   background-repeat: no-repeat;
   position: relative;
 
@@ -488,12 +482,16 @@ padding-left: 0;
     display: block;
     outline: none;
     right: 20px;
-    top: 35px;
-    left: 15px;
+    top: 25px;
+    left: 10px;
     border: none;
     position: fixed;
     background-color: transparent;
     z-index: 100;
+
+    &:active {
+      outline: none;
+    }
 
     svg {
       color: $black-color;
@@ -566,7 +564,7 @@ padding-left: 0;
     margin-bottom: 20px;
     text-align: center;
     margin-right: auto;
-  text-align: center;
+    text-align: center;
 
     a {
       color: $black-color;
