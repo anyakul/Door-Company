@@ -7,6 +7,7 @@ function scrollHorizontally(e) {
     if (document.querySelector('.ready-sets__list').addEventListener) {
         // IE9, Chrome, Safari, Opera
         document.querySelector('.ready-sets__list').addEventListener("mousewheel", scrollHorizontally, false);
+        document.querySelector('.ready-sets__list').addEventListener("ontouchmove", scrollHorizontally, false);
         // Firefox
         document.querySelector('.ready-sets__list').addEventListener("DOMMouseScroll", scrollHorizontally, false);
     } else {
