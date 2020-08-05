@@ -119,7 +119,7 @@ padding-left: 0;
 
 .header__logo-image {
   margin-bottom: 35px;
-  height: 80px;
+  height: 70px;
   @include null-padding;
 
   &--inner-page {
@@ -142,6 +142,7 @@ padding-left: 0;
 .header__logo-text-item {
   font-size: 16px;
   line-height: 18px;
+  padding-right: 0;
 
   @media (max-width: $tablet-width) {
     display: none;
@@ -350,6 +351,10 @@ padding-left: 0;
   }
 }
 
+.header__nav {
+    @include null-padding;
+}
+
 .header__promo-text-item {
   @include section-header;
   color: $white-color;
@@ -407,6 +412,7 @@ padding-left: 0;
     }
 
   &--inner-page {
+    @include null-padding;
     background-color: transparent;
     height: auto;
     text-align: right;
@@ -525,6 +531,7 @@ padding-left: 0;
   }
 
   &--inner-page {
+    @include null-padding;
     margin: 0;
     padding-top: 0;
     justify-content: space-between;
@@ -547,6 +554,7 @@ padding-left: 0;
 
 .header__menu-item {
   margin-bottom: 40px;
+  text-align: center;
 
     @media (max-width: $tablet-width) {
       margin-bottom: 20px;
@@ -571,7 +579,6 @@ padding-left: 0;
       font-size: 14px;
       line-height: 16px;
       text-align: center;
-      margin: 0 auto;
 
       @media (max-width: $tablet-width) {
         font-size: 20px;
