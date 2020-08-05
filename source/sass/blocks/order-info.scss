@@ -1,5 +1,10 @@
 .order-info {
   @include left-column;
+  padding-bottom: 30px;
+
+    @media (max-width: $tablet-width) {
+      @include null-padding;
+    }
 }
 
 .order-info__item {

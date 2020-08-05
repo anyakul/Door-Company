@@ -42,17 +42,20 @@ body {
 }
 
 .main__breadcrumbs-catalog {
-  padding-left: 2%;
-
   @media (max-width: $tablet-width) {
     order: 2;
   }
+}
+
+.header__cart-search {
+  min-width: 100px;
 }
 
 .main__breadcrumbs-order {
   padding-left: 7%;
 
   @media (max-width: $tablet-width) {
+    padding-right: 0;
     padding-left: 0;
     order: 2;
   }

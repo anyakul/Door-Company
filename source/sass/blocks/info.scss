@@ -10,14 +10,20 @@
 
 .info__image {
   width: 255px;
+  @include margin-left;
+
+  @media (max-width: $tablet-width) {
+    padding-left: 0;
+  }
 
   @media (max-width: $mobile-width){
-    order: 3;
     margin-bottom: 30px;
+    @include null-padding;
   }
 }
 
 .info__list {
+  @include null-padding;
   margin-top: 70px;
 
   @media (max-width: $tablet-width){
@@ -39,6 +45,7 @@
 }
 
 .info__item-text {
+  @include null-padding;
   @include section-item-text;
   padding-left: 0;
 }

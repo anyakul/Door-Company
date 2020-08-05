@@ -1,15 +1,19 @@
 .popular-goods {
   @include margin-left;
   @include margin-from-section;
+  padding-right: 15px;
+  @media (max-width: $tablet-width) {
+    padding-left: 15px;
+  }
 }
 
 .popular-goods__header {
   @include section-header;
   @include margin-from-header;
-  padding-left: 30px;
-  @media (max-width: $mobile-width) {
+  @media (max-width: $tablet-width) {
     margin-left: 0;
     margin-right: 0;
+  @include null-padding;
   }
 }
 
@@ -17,9 +21,10 @@
   @include cancel-list;
   margin: auto;
   @include margin-from-list;
-  padding-left: 15px;
-  @media (max-width: $mobile-width) {
-    margin-right: 0;
+    @include null-padding;
+
+
+@media (max-width: $tablet-width) {
   }
 }
 
@@ -40,8 +45,9 @@
   margin-top: 185px;
 
 
-  @media (max-width: $mobile-width) {
+  @media (max-width: $tablet-width) {
     margin: 0;
+    padding-left: 0;
   }
 
   &:nth-child(1),
@@ -58,8 +64,7 @@
 .popular-goods__item-image {
   margin-right: 0.1em;
   padding-left: 0;
-  height: 100%;
-  @media (max-width: $mobile-width) {
+  @media (max-width: $tablet-width) {
     margin-bottom: 0;
     padding-right: 0;
   }
@@ -70,6 +75,7 @@
 
   @media (max-width: $tablet-width) {
     margin-top: 0;
+    padding-left: 10px;
   }
 }
 
@@ -109,10 +115,14 @@
   @include margin-from-button;
   margin-left: auto;
   display: block;
-  padding-left: 30px;
+  @include null-padding;
 
   @media (max-width: $mobile-width) {
     margin-bottom: 0;
+  }
+
+  @media (max-width: $tablet-width) {
+    padding-left: 0;
   }
 
   svg {

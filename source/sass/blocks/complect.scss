@@ -1,17 +1,23 @@
 .complect {
+  @include margin-left;
   @include margin-from-section;
   order: 4;
 }
 
 .complect__header {
   @include margin-from-header;
+  @include section-header;
   padding-left: 30px;
+
+  @media (max-width: $tablet-width) {
+    padding-left: 15px;
+  }
 }
 
 .complect__item {
   margin-bottom: 70px;
   border: 1px solid $white-color;
-  padding: 70px 0 0 0;
+  padding-left: 0;
 
   &:hover {
     border: 1px solid #d6d6d6;
@@ -30,8 +36,12 @@
 
 
 .complect__item-text {
-  margin-top: auto;
+  margin-top: 100px;
   margin-bottom: 20px;
+
+  @media (max-width: $tablet-width) {
+    margin-top: 20px;
+  }
 }
 
 .complect__item-header,
@@ -51,14 +61,16 @@
 }
 
 
-.complect-image {
+.complect__item-image {
   margin-bottom: 35px;
   padding-right: 0;
-  height: 100%;
+
+  @media (max-width: $tablet-width) {
+    @include null-padding;
+  }
 
   @media (max-width: $mobile-width) {
     margin-bottom: 10px;
-  padding-left: 5px;
   }
 }
 

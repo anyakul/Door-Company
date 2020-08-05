@@ -1,5 +1,4 @@
 .ready-sets {
-  @include padding-left-element;
   @include margin-from-section;
   margin-right: 0;
   margin-left: auto;
@@ -8,6 +7,7 @@
   @media (max-width: $tablet-width) {
     margin-left: 0;
     padding-right: 0;
+    @include null-padding;
   }
 }
 
@@ -16,7 +16,7 @@
   margin-bottom: 20px;
 
   @media (max-width: $tablet-width) {
-    padding-left: 30px;
+    @include padding-left;
   }
 
 }
@@ -26,7 +26,8 @@
   margin-bottom: 60px;
 
   @media (max-width: $tablet-width) {
-    padding-left: 30px;
+    @include padding-left;
+    margin-bottom: 30px;
   }
 }
 
@@ -35,20 +36,22 @@
   @include section-long-text;
 
   @media (max-width: $tablet-width) {
-    padding-left: 30px;
+    @include padding-left;
   }
 }
 
 .ready-sets__list {
-  @include margin-from-list;
   @include cancel-list;
   @include null-padding;
   justify-content: space-between;
-  overflow: scroll;
   flex-wrap: nowrap;
+  overflow: scroll;
   margin-left: auto;
   padding-right: 0;
   margin-right: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+
 
   @media (max-width: $tablet-width) {
     margin-left: 0;
@@ -60,6 +63,7 @@
   padding-left: 0;
   margin-right: 4em;
   margin-left: 0;
+
 
   @media (max-width: $tablet-width) {
     margin-right: 2em;
@@ -78,7 +82,7 @@
   text-transform: uppercase;
 
   @media (max-width: $tablet-width) {
-    font-size: 24px;
-    padding-left: 25px;
+    font-size: 20px;
+    padding-left: 10px;
   }
 }

@@ -17,7 +17,7 @@
   margin-left: 30px;
 
   @media (max-width: $tablet-width) {
-    padding-left: 0;
+    margin-left: -15px;
   }
 }
 
@@ -30,10 +30,10 @@
 }
 
 @mixin padding-left {
-  padding-left: 2%;
+  padding-left: 30px;
 
   @media (max-width: $tablet-width) {
-    padding-left: 0;
+    padding-left: 15px;
   }
 }
 
@@ -53,7 +53,7 @@
   }
 
   @media (max-width: $mobile-width) {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
   }
 }
 
@@ -164,6 +164,7 @@
   line-height: 2.5rem;
   @media (max-width: $tablet-width) {
     line-height: 30px;
+    font-size: 1rem;
   }
 }
 
@@ -178,8 +179,9 @@
   text-align: left;
 
   @media (max-width: $tablet-width) {
-    font-size: 18px;
+    font-size: 14px;
     line-height: 20px;
+  padding: 15px;
   }
   svg {
     height: 15px;
@@ -190,6 +192,7 @@
 
 @mixin blue-button-in-form {
   @include blue-button;
+  font-size: 23px;
   svg {
     height: 15px;
     width: 80px;
@@ -199,7 +202,7 @@
 @mixin margin-from-section {
   margin-bottom: 130px;
   @media (max-width: $tablet-width) {
-    margin-bottom: 80px;
+    margin-bottom: 50px;
   }
 }
 
@@ -230,6 +233,11 @@
   text-transform: uppercase;
 
   @media (max-width: $tablet-width) {
+    font-size: 2.5rem;
+    line-height: 2.6rem;
+  }
+
+  @media (max-width: $mobile-width) {
     font-size: 1.5rem;
     line-height: 1.6rem;
   }
@@ -296,11 +304,12 @@
   padding-left: 30px;
 
   @media (max-width: $tablet-width) {
-    margin-top: 30px;
+    margin-top: 20px;
     order: 1;
     padding-bottom: 30px;
     margin-bottom: 50px;
-    padding-top: 30px;
+    padding-top: 25px;
+    padding-left: 15px;
   }
 
   &::before {

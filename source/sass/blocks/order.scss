@@ -8,6 +8,7 @@
 .order__images {
   @media (max-width: $tablet-width) {
     margin-bottom: 2em;
+    @include null-padding;
   }
 }
 
@@ -15,10 +16,11 @@
   @include section-header;
   color: $blue-color;
   margin-bottom: 1em;
+  @include null-padding;
 }
 
 .order__form {
-  padding-left: 0;
+    @include null-padding;
 }
 
 .order__form-group-list {
@@ -64,6 +66,16 @@
   }
 }
 
+.order__form-group-item,
+.order__form-group-item-size,
+.order__form-price,
+.order__form-button {
+
+  @media (max-width: $tablet-width) {
+    @include null-padding;
+  }
+}
+
 .order__form-price {
   @include section-header;
   margin-bottom: 55px;
@@ -75,6 +87,6 @@
   margin-left: 15px;
 
   @media (max-width: $tablet-width) {
-    margin-bottom: 2em;
+    @include null-margin;
   }
 }

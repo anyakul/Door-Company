@@ -3,7 +3,6 @@
   padding-left: 0;
   @media (max-width: $tablet-width) {
     position: relative;
-    margin-bottom: 60px;
   }
 }
 
@@ -14,6 +13,7 @@
 }
 
 .header__logo-menu {
+padding-left: 0;
   @media (max-width: $tablet-width) {
     position: fixed;
     padding-top: 0;
@@ -34,33 +34,35 @@
   }
 }
 
+.header__logo-image-wrapper {
+  padding-left: 7px;
+}
+
 .header__logo-cart-search {
+@include null-padding;
   @media (max-width: $tablet-width) {
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
 
     background-color: $white-color;
     z-index: 99;
-  }
-
-  @media (max-width: $tablet-width) {
-    padding-left: 40px;
   }
 }
 
 .header__cart-search {
   @include cancel-list;
   margin-bottom: 0;
-  margin-top: 6px;
+  margin-left: auto;
+  padding-right: 0;
 }
 
 .header__logo-header {
   @include section-item-header;
-  fot-family: $font-light;
+  font-family: $font-light;
   margin-bottom: 0;
   text-transform: uppercase;
   margin-bottom: 35px;
-
+  @include null-padding;
   @media (max-width: $tablet-width) {
     display: none;
   }
@@ -68,11 +70,14 @@
   &--inner-page {
     font-size: 20px;
     line-height: 23px;
+    margin-bottom: 15px;
+    @include null-padding;
   }
 }
 
 .header__logo-menu {
   padding-top: 50px;
+  padding-right: 0;
 
   @media (max-width: $tablet-width) {
     padding-top: 0;
@@ -81,6 +86,7 @@
 
 .header__logo-cart-search-wrapper {
   justify-content: space-between;
+  padding-right: 0;
 }
 
 .header__logo-link {
@@ -88,6 +94,7 @@
   text-align: left;
   background-color: $white-color;
   padding-top: 85px;
+  @include null-padding;
 
   @media (max-width: $tablet-width) {
     background-color: $white-color;
@@ -98,12 +105,22 @@
 
   &--inner-page {
     padding-top: 0;
+    margin-left: 15%;
+
+    @media (max-width: $tablet-width) {
+      margin-left: 20px;
+    }
   }
+}
+
+.header__logo-image-wrapper {
+  @include null-padding;
 }
 
 .header__logo-image {
   margin-bottom: 35px;
   height: 80px;
+  @include null-padding;
 
   &--inner-page {
     margin-bottom: 0;
@@ -111,8 +128,9 @@
 
   @media (max-width: $tablet-width) {
     margin-bottom: 0;
-    width: 50px;
-    height: 30px;
+    width: 55px;
+    height: 35px;
+  margin-left: 35px;
   }
 }
 
@@ -120,7 +138,8 @@
   align-items: flex-start;
 }
 
-.header__logo-text {
+.header__logo-text,
+.header__logo-text-item {
   font-size: 16px;
   line-height: 18px;
 
@@ -131,7 +150,13 @@
   &--inner-page {
     font-size: 12px;
     line-height: 14px;
+  @include null-margin;
+  @include null-padding;
   }
+}
+
+.header__logo-text-item {
+  @include null-padding;
 }
 
 .header__cart,
@@ -141,25 +166,43 @@
   @media (max-width: $tablet-width) {
     display: block;
     svg {
+      @include center-absolute-element;
       color: $black-color;
-    @include center-absolute-element;
+    }
+  }
+}
+
+.header__cart {
+  display: none;
+
+  @media (max-width: $tablet-width) {
+    display: block;
+    svg {
+      top: 15px;
     }
   }
 }
 
 .header__cart-search-item {
   text-align: right;
+  padding-right: 0;
 }
 
 .header__cart {
   @media (max-width: $tablet-width) {
-    margin-top: 18px;
+  margin-right: 0;
+  text-align: right;
+  margin-left: auto;
+    width: 20px;
+    height: 20px;
   }
 }
 
 .header__search {
   @media (max-width: $tablet-width) {
-    margin-top: 10px;
+    width: 20px;
+    height: 20px;
+    margin-top: 20px;
   }
 }
 
@@ -172,16 +215,11 @@
   margin-left: 0;
   margin-right: 0;
 
-
   @media (max-width: $tablet-width) {
-    padding-top: 35px;
-    padding-bottom: 40px;
+    padding-top: 25px;
+    padding-bottom: 15px;
     order: 3;
-    margin-top: 90px;
-  }
-
-  @media (max-width: $mobile-width) {
-    @include null-padding;
+    margin-top: 70px;
   }
 }
 
@@ -203,7 +241,13 @@
 
 .header__promo-wrapper {
   margin-left: 0;
-  @media (max-width: $mobile-width) {
+
+  @media (max-width: $tablet-width) {
+    * {
+      @include null-padding;
+    }
+  }
+  @media (max-width: $tablet-width) {
     margin-bottom: 30px;
     @include null-padding;
   }
@@ -219,6 +263,7 @@
 
   @media (max-width: $tablet-width) {
     border-right: 1px solid $white-color;
+    padding-left: 20px;
   }
 
 
@@ -242,6 +287,14 @@
   }
 }
 
+.header__nav {
+  &--opened {
+    .header__menu {
+      display: block;
+    }
+  }
+}
+
 .header__promo-search-form-button {
   background-color: transparent;
   position: relative;
@@ -260,6 +313,12 @@
     width: 25px;
     height: 30px;
   }
+}
+
+.header__menu-list-cart-search {
+  flex-wrap: nowrap;
+  margin-right: -80px;
+  margin-left: auto;
 }
 
 .header__promo-cart {
@@ -294,6 +353,7 @@
 .header__promo-text-item {
   @include section-header;
   color: $white-color;
+  padding-left: 0;
 }
 
 .header__promo-text-item-button {
@@ -305,13 +365,12 @@
 }
 
 .header__menu {
-  @include margin-left-element;
   margin-top: -235px;
   height: 410px;
   background-color: $blue-color;
 
     @media (max-width: $tablet-width) {
-      padding: 40px 0 0;
+      padding: 20px 0 0;
       order: 2;
       position: fixed;
       z-index: 40;
@@ -322,19 +381,40 @@
         display: block;
       }
       &--closed {
-        display: none;
+        ul {
+          display: none;
+         }
+        .header__icon-burger {
+          display: block;
+        }
+
+        .header__icon-cross {
+          display: none;
+        }
+      }
+      &--opened {
+      ul {
+        display: block;
+      }
+        .header__icon-burger {
+          display: none;
+        }
+
+        .header__icon-cross {
+          display: block;
+        }
       }
     }
 
   &--inner-page {
     background-color: transparent;
-    margin: auto 0;
     height: auto;
-    text-align: center;
+    text-align: right;
     padding-bottom: 0;
     margin-top: 0;
     justify-content: space-between;
     text-align: center;
+    flex-wrap: nowrap;
 
     a {
       color: $black-color;
@@ -342,7 +422,7 @@
     }
 
     @media (max-width: $tablet-width) {
-      padding: 30px 0 80px 0;
+      padding: 0 0 80px 0;
       order: 2;
       position: fixed;
       z-index: 40;
@@ -365,6 +445,33 @@
   }
 }
 
+.header__nav {
+  @media (max-width: $tablet-width) {
+    &--opened {
+      .header__menu {
+        display: block;
+      }
+        .header__icon-burger {
+          display: none;
+        }
+        .header__icon-cross {
+          display: block;
+        }
+    }
+    &--closed {
+      .header__menu {
+        display: none;
+      }
+        .header__icon-burger {
+          display: block;
+        }
+        .header__icon-cross {
+          display: none;
+        }
+    }
+  }
+}
+
 
 
 .header__toggle {
@@ -372,9 +479,14 @@
   width: 25px;
   height: 15px;
   background-repeat: no-repeat;
+  position: relative;
 
   @media (max-width: $tablet-width) {
+    svg {
+      @include center-absolute-element;
+    }
     display: block;
+    outline: none;
     right: 20px;
     top: 35px;
     left: 15px;
@@ -386,7 +498,9 @@
     svg {
       color: $black-color;
     }
-
+    &:active {
+      outline: none;
+    }
   }
 }
 
@@ -410,17 +524,13 @@
     @media (max-width: $tablet-width) {
       display: block;
     }
-
   }
 
   &--inner-page {
-    padding: 0;
+    margin: 0;
+    padding-top: 0;
     justify-content: space-between;
-
-    &:nth-child(2) {
-      background-color: $beige-color;
-      text-align: center;
-    }
+    margin-right: auto;
   }
 
   &--cart-search {
@@ -428,6 +538,12 @@
     text-align: right;
     position: relative;
     z-index: 10;
+  }
+}
+
+.header__menu-list-cart-search {
+  @media (max-width: $tablet-width) {
+    display: none;
   }
 }
 
@@ -441,10 +557,6 @@
   a {
     @include section-text;
     color: $white-color;
-
-    @media (max-width: $tablet-width) {
-      font-size: 30px;
-    }
   }
 
   &--inner-page {
@@ -500,11 +612,15 @@
 
 .header__info-list {
   @include cancel-list;
+  @include null-padding;
 }
 
 .header__info-item {
   margin-top: 20px;
-  padding-left: 0;
+
+  @media (max-width: $tablet-width) {
+    @include null-padding;
+  }
 }
 
 .header__info-item-header {
@@ -512,6 +628,8 @@
 
   @media (max-width: $tablet-width) {
     font-size: 16px;
+    margin-bottom: 0;
+    padding-left: 0;
   }
 }
 
@@ -521,6 +639,7 @@
 
   @media (max-width: $tablet-width) {
     font-size: 14px;
+    @include null-padding;
   }
 }
 

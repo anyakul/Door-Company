@@ -1,5 +1,13 @@
 .breadcrumbs {
-  padding-left: 15px;
+  @include margin-left;
+
+  @media (max-width: $tablet-width) {
+    @include null-padding;
+  }
+
+  &--card-page {
+    margin-left: auto;
+  }
 }
 
 .breadcrumbs__list {

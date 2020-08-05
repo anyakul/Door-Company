@@ -12,15 +12,15 @@
 <header class="header row">
     <section class="header__logo-menu row col-12">
       <h2 class="visually-hidden">Хедер</h2>
-      <div class="header__logo-cart-search row col-12 col-xl-3">
-        <a class="header__logo-link header__logo-link--inner-page col-5 col-xl-12 row" href="index.html">
-          <img class="header__logo-image header__logo-image--inner-page" width="88" src="img/logo.png" alt="logo">
-          <div class="header__logo-text col-7">
-            <p class="header__logo-header header__logo-header--inner-page">Белгородская дверная компания</p>
-            <span class="header__logo-text header__logo-text--inner-page">Официальный интернет-магазин производства</span>
+      <div class="header__logo-cart-search row col-12 col-xl-2">
+        <a class="header__logo-link header__logo-link--inner-page col-3 col-xl-12 row" href="index.html">
+          <img class="header__logo-image header__logo-image--inner-page" width="60" src="img/logo.png" alt="logo">
+          <div class="header__logo-text row col-7">
+            <p class="header__logo-header col-12 header__logo-header--inner-page">Белгородская дверная компания</p>
+            <span class="header__logo-text col-12 header__logo-text--inner-page">Официальный интернет-магазин производства</span>
           </div>
         </a>
-        <ul class="header__cart-search row col-3 col-md-2">
+        <ul class="header__cart-search row">
           <li class="header__cart-search-item col">
             <a class="header__cart align-self-end" href="form.html">
               <svg width="29" height="30">
@@ -37,52 +37,57 @@
           </li>
         </ul>
       </div>
-      <button class="header__toggle" type="button">
-        <svg width="40" height="40">
-          <use xlink:href="img/sprite.svg#menu"></use>
-        </svg>
-        <span class="visually-hidden">Открыть меню</span>
-      </button>
-      <div class="header__menu header__menu--inner-page header__menu--no-js header__menu--closed row col-12 col-xl-9">
-        <ul class="header__menu-list header__menu-list--inner-page row row-cols-xl-12 col-12 col-xl-10">
-          <li class="header__menu-item header__menu-item--inner-page col-12 col-md-3 col-xl">
-            <a href="card.html">Межкомнатные</a>
-          </li>
-          <li class="header__menu-item header__menu-item--inner-page col-12 col-md-3 col-xl">
-            <a href="#">Входные</a>
-          </li>
-          <li class="header__menu-item header__menu-item--inner-page col-12 col-md-3 col-xl">
-            <a href="#">Раздвижные</a>
-          </li>
-          <li class="header__menu-item header__menu-item--inner-page col-12 col-md-3 col-xl">
-            <a href="#">Складные</a>
-          </li>
-          <li class="header__menu-item header__menu-item--inner-page col-12 col-md-3 col-xl">
-            <a href="#">Специальные</a>
-          </li>
-          <li class="header__menu-item header__menu-item--inner-page col-12 col-md-3 col-xl">
-            <a href="#">Фурнитура</a>
-          </li>
-          <li class="header__menu-item header__menu-item--inner-page col-12 col-md-3 col-xl">
-            <a href="#">Арки и порталы</a>
-          </li>
-        </ul>
-        <ul class="header__menu-list-cart-search row col-1">
-          <li class="header__menu-item header__menu-item--inner-page col">
-            <a href="form.html">
-              <svg width="29" height="30">
-                <use xlink:href="img/sprite.svg#cart"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="header__menu-item header__menu-item--inner-page header__menu-item--search col">
-            <a href="#">
-              <svg width="29" height="25">
-                <use xlink:href="img/sprite.svg#search"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
+      <div class="header__nav header__nav--no-js header__nav--closed row col col-xl-9">
+        <button class="header__toggle" type="button">
+          <svg class="header__icon-burger" width="40" height="40">
+            <use xlink:href="img/sprite.svg#menu"></use>
+          </svg>
+          <svg class="header__icon-cross" width="40" height="40">
+            <use xlink:href="img/sprite.svg#cross"></use>
+          </svg>
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <div class="header__menu header__menu--inner-page row col-12">
+          <ul class="header__menu-list header__menu-list--inner-page row row-cols-xl-7 col-12 col-xl-11">
+            <li class="header__menu-item header__menu-item--inner-page col-12 col-md-4 col-xl">
+              <a href="card.html">Межкомнатные</a>
+            </li>
+            <li class="header__menu-item header__menu-item--inner-page col-12 col-md-4 col-xl">
+              <a href="#">Входные</a>
+            </li>
+            <li class="header__menu-item header__menu-item--inner-page col-12 col-md-4 col-xl">
+              <a href="#">Раздвижные</a>
+            </li>
+            <li class="header__menu-item header__menu-item--inner-page col-12 col-md-4 col-xl">
+              <a href="#">Складные</a>
+            </li>
+            <li class="header__menu-item header__menu-item--inner-page col-12 col-md-4 col-xl">
+              <a href="#">Специальные</a>
+            </li>
+            <li class="header__menu-item header__menu-item--inner-page col-12 col-md-4 col-xl">
+              <a href="#">Фурнитура</a>
+            </li>
+            <li class="header__menu-item header__menu-item--inner-page col-12 col-md-4 col-xl">
+              <a href="#">Арки и порталы</a>
+            </li>
+          </ul>
+          <ul class="header__menu-list-cart-search row">
+            <li class="header__menu-item header__menu-item--inner-page col">
+              <a href="form.html">
+                <svg width="29" height="30">
+                  <use xlink:href="img/sprite.svg#cart"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="header__menu-item header__menu-item--inner-page header__menu-item--search col">
+              <a href="#">
+                <svg width="29" height="25">
+                  <use xlink:href="img/sprite.svg#search"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </section>
   </header>
@@ -94,11 +99,11 @@
           <ul class="form__group-list col-12 row">
             <li class="form__group-item col-12 row">
               <label class="form__group-label col-12 col-md-2" for="name">Ф.И.О.</label>
-              <input class="form__group-input col-12 col-md-9" type="text" id="name">
+              <input class="form__group-input col-12 col-md-10 col-xl-8" type="text" id="name">
             </li>
             <li class="form__group-item col-12 row">
               <label class="form__group-label col-12 col-md-2" for="phone">Телефон</label>
-              <input class="form__group-input col-12 col-md-9" type="tel" id="phone">
+              <input class="form__group-input col-12 col-md-10 col-xl-8" type="tel" id="phone">
             </li>
           </ul>
         </fieldset>
@@ -110,18 +115,18 @@
                 <span class="form__group-label col-12">Город</span>
                 <span class="form__group-text col-12">Населенный пункт</span>
               </label>
-              <input class="form__group-input col-12 col-md-9" type="text" id="city" name="city">
+              <input class="form__group-input col-12 col-md-10 col-xl-8" type="text" id="city" name="city">
             </li>
             <li class="form__group-item row col-12">
               <ul class="form__group-item-list-radio row col-12 col-md-10">
-                <li class="form__group-item-radio col-12 col-md-5">
+                <li class="form__group-item-radio col-12 col-md-5 col-xl-4">
                   <input class="form__group-item-radio-input visually-hidden" type="radio" value="delivery" id="delivery" checked="">
                   <label class="form__group-item-radio-label row" for="delivery">
                     <span class="form__group-label-radio col-12">Курьерской службой</span>
                     <span class="form__group-price-radio col-12">215 руб.</span>
                   </label>
                 </li>
-                <li class="form__group-item-radio col-12 col-md-5">
+                <li class="form__group-item-radio col-12 col-md-5 col-xl-4">
                   <input class="form__group-item-radio-input visually-hidden" type="radio" value="sdek" id="sdek">
                   <label class="form__group-item-radio-label row" for="sdek">
                     <span class="form__group-label-radio col-12">Получение в пункте выдачи (СДЭК)</span>
@@ -132,7 +137,7 @@
             </li>
             <li class="form__group-item row col-12">
               <label class="form__group-label col-12 col-md-2" for="address">Адрес</label>
-              <input class="form__group-input col-12 col-md-9" type="text" id="address">
+              <input class="form__group-input col-12 col-md-10 col-xl-8" type="text" id="address">
             </li>
           </ul>
         </fieldset>
@@ -152,17 +157,19 @@
           </ul>
         </fieldset>
         <div class="form__buttons row col-12">
-          <button class="form__button row col-12 col-md-7">
-            <span class="form__button-text col-8">Оформить заказ</span>
-            <svg class="col-3" height="20">
-              <use xlink:href="img/sprite.svg#arrow-middle"></use>
-            </svg>
+          <button class="form__button row col-12 col-md-5 col-xl">
+            <span class="form__button-text col-7">Оформить заказ</span>
+            <div class="form__button-text-icon col-5">
+              <svg height="20">
+                <use xlink:href="img/sprite.svg#arrow-middle"></use>
+              </svg>
+            </div>
           </button>
-          <ul class="form__links row col-12 col-md-5">
-            <li class="form__link col col-xl-12">
+          <ul class="form__links row col-12 col-md-5 col-xl">
+            <li class="form__link col-12 col-md col-xl-12">
               <a href="#">Посмотреть товары в заказе</a>
             </li>
-            <li class="form__link col col-xl-12">
+            <li class="form__link col-12 col-md col-xl-12">
               <a href="#">Добавить комментарий</a>
             </li>
           </ul>

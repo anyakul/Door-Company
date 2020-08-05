@@ -9,20 +9,25 @@
 
 .footer__menu-copyright {
   background-color: $blue-color;
-  padding-left: 5%;
   padding-top: 153px;
+  @include padding-left;
 
   @media (max-width: $tablet-width) {
     order: 2;
     padding-top: 50px;
     padding-bottom: 50px;
-    padding-left: 1%;
   }
 }
 
 .footer__menu-list,
 .footer__copyright-list {
   @include cancel-list;
+  @include null-padding;
+  padding-left: 2%;
+
+  @media (max-width: $tablet-width) {
+    padding-left: 0;
+  }
 }
 
 .footer__menu-list {
@@ -68,7 +73,7 @@
 
   @media (max-width: $tablet-width) {
     @include null-margin;
-    padding-left: 30px;
+    @include padding-left;
     margin-top: 0px;
     margin-bottom: 40px;
     order: 1;
@@ -79,7 +84,7 @@
 
   @media (max-width: $tablet-width) {
     @include null-margin;
-    padding-left: 30px;
+    padding-left: 10px;
   }
 }
 
@@ -98,6 +103,8 @@
     order: 1;
     margin-left: 0;
     padding-left: 0;
+    @include null-margin;
+    @include null-padding;
   }
 
   svg {

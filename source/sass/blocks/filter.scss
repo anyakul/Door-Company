@@ -1,13 +1,14 @@
 .filter {
   @include left-column;
+  padding-top: 70px;
 }
 
 .filter__wrapper {
-  margin-right: 5%;
-  margin-top: 170px;
+  margin-top: 80px;
 
   @media (max-width: $tablet-width) {
-    margin-top: 50px;
+    margin-top: 0;
+    padding-top: 20px;
   }
 }
 
@@ -22,7 +23,7 @@
     margin-bottom: 117px;
 
     @media (max-width: $tablet-width) {
-      margin-bottom: 20px;
+      margin-bottom: 10px;
     }
   }
 }
@@ -30,7 +31,7 @@
 .filter__form-group-legend {
   @include section-text;
   text-align: left;
-  padding-left: 0;
+  @include null-padding;
 
   @media (max-width: $mobile-width) {
     margin-bottom: 20px;
@@ -51,14 +52,19 @@
 
 .filter__form-group-legend--price {
   padding-top: 25px;
+
+  @media (max-width: $tablet-width) {
+    padding-top: 0;
+  }
 }
 
 .filter__form-group-list {
   @include cancel-list;
   justify-content: space-between;
+  padding-right: 0;
 
   @media (max-width: $mobile-width) {
-    padding-left: 0;
+  padding: 0;
   }
 }
 
@@ -73,12 +79,15 @@
 }
 
 .filter__form-group-list {
-  padding: 0;
 }
 
 .filter__form-group-item {
   margin-bottom: 25px;
-  padding-left: 0;
+  @include null-padding;
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 10px;
+  }
   &--size {
     text-align: right;
     margin-left: auto;
@@ -87,6 +96,7 @@
 
     @media (max-width: $tablet-width) {
       text-align: left;
+    margin-bottom: 10px;
     }
   }
 }

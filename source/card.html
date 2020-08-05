@@ -12,15 +12,15 @@
   <header class="header row">
     <section class="header__logo-menu row col-12">
       <h2 class="visually-hidden">Хедер</h2>
-      <div class="header__logo-cart-search row col-12 col-xl-3">
-        <a class="header__logo-link header__logo-link--inner-page col-5 col-xl-12 row" href="index.html">
-          <img class="header__logo-image header__logo-image--inner-page" width="88" src="img/logo.png" alt="logo">
-          <div class="header__logo-text col-7">
-            <p class="header__logo-header header__logo-header--inner-page">Белгородская дверная компания</p>
-            <span class="header__logo-text header__logo-text--inner-page">Официальный интернет-магазин производства</span>
+      <div class="header__logo-cart-search row col-12 col-xl-2">
+        <a class="header__logo-link header__logo-link--inner-page col-3 col-xl-12 row" href="index.html">
+          <img class="header__logo-image header__logo-image--inner-page" width="60" src="img/logo.png" alt="logo">
+          <div class="header__logo-text row col-7">
+            <p class="header__logo-header col-12 header__logo-header--inner-page">Белгородская дверная компания</p>
+            <span class="header__logo-text col-12 header__logo-text--inner-page">Официальный интернет-магазин производства</span>
           </div>
         </a>
-        <ul class="header__cart-search row col-3 col-md-2">
+        <ul class="header__cart-search row">
           <li class="header__cart-search-item col">
             <a class="header__cart align-self-end" href="form.html">
               <svg width="29" height="30">
@@ -37,58 +37,63 @@
           </li>
         </ul>
       </div>
-      <button class="header__toggle" type="button">
-        <svg width="40" height="40">
-          <use xlink:href="img/sprite.svg#menu"></use>
-        </svg>
-        <span class="visually-hidden">Открыть меню</span>
-      </button>
-      <div class="header__menu header__menu--inner-page header__menu--no-js header__menu--closed row col-12 col-xl-9">
-        <ul class="header__menu-list header__menu-list--inner-page row row-cols-xl-12 col-12 col-xl-10">
-          <li class="header__menu-item header__menu-item--inner-page col-12 col-md-3 col-xl">
-            <a href="card.html">Межкомнатные</a>
-          </li>
-          <li class="header__menu-item header__menu-item--inner-page col-12 col-md-3 col-xl">
-            <a href="#">Входные</a>
-          </li>
-          <li class="header__menu-item header__menu-item--inner-page col-12 col-md-3 col-xl">
-            <a href="#">Раздвижные</a>
-          </li>
-          <li class="header__menu-item header__menu-item--inner-page col-12 col-md-3 col-xl">
-            <a href="#">Складные</a>
-          </li>
-          <li class="header__menu-item header__menu-item--inner-page col-12 col-md-3 col-xl">
-            <a href="#">Специальные</a>
-          </li>
-          <li class="header__menu-item header__menu-item--inner-page col-12 col-md-3 col-xl">
-            <a href="#">Фурнитура</a>
-          </li>
-          <li class="header__menu-item header__menu-item--inner-page col-12 col-md-3 col-xl">
-            <a href="#">Арки и порталы</a>
-          </li>
-        </ul>
-        <ul class="header__menu-list-cart-search row col-1">
-          <li class="header__menu-item header__menu-item--inner-page col">
-            <a href="form.html">
-              <svg width="29" height="30">
-                <use xlink:href="img/sprite.svg#cart"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="header__menu-item header__menu-item--inner-page header__menu-item--search col">
-            <a href="#">
-              <svg width="29" height="25">
-                <use xlink:href="img/sprite.svg#search"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
+      <div class="header__nav header__nav--no-js header__nav--closed row col col-xl-9">
+        <button class="header__toggle" type="button">
+          <svg class="header__icon-burger" width="40" height="40">
+            <use xlink:href="img/sprite.svg#menu"></use>
+          </svg>
+          <svg class="header__icon-cross" width="40" height="40">
+            <use xlink:href="img/sprite.svg#cross"></use>
+          </svg>
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <div class="header__menu header__menu--inner-page row col-12">
+          <ul class="header__menu-list header__menu-list--inner-page row row-cols-xl-7 col-12 col-xl-11">
+            <li class="header__menu-item header__menu-item--inner-page col-12 col-md-4 col-xl">
+              <a href="card.html">Межкомнатные</a>
+            </li>
+            <li class="header__menu-item header__menu-item--inner-page col-12 col-md-4 col-xl">
+              <a href="#">Входные</a>
+            </li>
+            <li class="header__menu-item header__menu-item--inner-page col-12 col-md-4 col-xl">
+              <a href="#">Раздвижные</a>
+            </li>
+            <li class="header__menu-item header__menu-item--inner-page col-12 col-md-4 col-xl">
+              <a href="#">Складные</a>
+            </li>
+            <li class="header__menu-item header__menu-item--inner-page col-12 col-md-4 col-xl">
+              <a href="#">Специальные</a>
+            </li>
+            <li class="header__menu-item header__menu-item--inner-page col-12 col-md-4 col-xl">
+              <a href="#">Фурнитура</a>
+            </li>
+            <li class="header__menu-item header__menu-item--inner-page col-12 col-md-4 col-xl">
+              <a href="#">Арки и порталы</a>
+            </li>
+          </ul>
+          <ul class="header__menu-list-cart-search row">
+            <li class="header__menu-item header__menu-item--inner-page col">
+              <a href="form.html">
+                <svg width="29" height="30">
+                  <use xlink:href="img/sprite.svg#cart"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="header__menu-item header__menu-item--inner-page header__menu-item--search col">
+              <a href="#">
+                <svg width="29" height="25">
+                  <use xlink:href="img/sprite.svg#search"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </section>
   </header>
   <main class="main main--inner-page row">
     <div class="main__breadcrumbs-order col-12 col-xl-10">
-      <div class="breadcrumbs row col-12">
+      <div class="breadcrumbs breadcrumbs--card-page row col-12 col-xl-7">
         <ul class="breadcrumbs__list breadcrumbs__list--card-page col-12 cols-md-7 row">
           <li class="breadcrumbs__item row">
             <a class="breadcrumbs__item-link col" href="catalog.html">Каталог /</a>
@@ -151,7 +156,7 @@
               </li>
             </ul>
             <p class="order__form-price col-12">2 790 р</p>
-            <button class="order__form-button col">
+            <button class="order__form-button col-12 col-md-11">
               Добавить в корзину
               <svg>
                 <use xlink:href="img/sprite.svg#arrow-small"></use>
@@ -167,7 +172,7 @@
       <p class="order-info__item order-info__item--available col col-xl-12">В наличии</p>
     </div>
     <section class="info row col-12">
-      <h2 class="visually-hidden">инфа</h2>
+      <h2 class="visually-hidden">Инфа</h2>
       <img class="info__image col-12 col-md-2 col-xl-3" src="img/door-in-interier.png" alt="Межкомнатные двери">
       <ul class="info__list col-12 col-md-10 col-xl-7">
         <li class="info__item row">
@@ -223,11 +228,6 @@
             <p class="recomendations__item-text-item">Порта - 29</p>
             <p class="complect__item-price">4 320 .—</p>
           </div>
-          <button class="recomendations__item-button col-12">Добавить в корзину
-            <svg width="27" height="16">
-              <use xlink:href="img/sprite.svg#arrow-small"></use>
-            </svg>
-          </button>
         </li>
         <li class="recomendations__item col align-self-start row">
           <img class="recomendations__item-image col col-4" src="img/dark-grey-door.png" alt="Межкомнатные двери">
@@ -236,11 +236,6 @@
             <p class="recomendations__item-text-item">Порта - 29</p>
             <p class="recomendations__item-price">3 640 .—</p>
           </div>
-          <button class="recomendations__item-button col-12">Добавить в корзину
-            <svg width="27" height="16">
-              <use xlink:href="img/sprite.svg#arrow-small"></use>
-            </svg>
-          </button>
         </li>
         <li class="recomendations__item col align-self-start row">
           <img class="recomendations__item-image col col-4" src="img/dark-grey-door.png" alt="Межкомнатные двери">
@@ -251,11 +246,6 @@
             <p class="recomendations__item-old-price">5 770</p>
             <p class="recomendations__item-price">4 320 .—</p>
           </div>
-          <button class="recomendations__item-button col-12">Добавить в корзину
-            <svg width="27" height="16">
-              <use xlink:href="img/sprite.svg#arrow-small"></use>
-            </svg>
-          </button>
         </li>
       </ul>
     </section>

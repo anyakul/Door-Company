@@ -1,6 +1,5 @@
 .about-company {
   @include margin-from-section;
-  margin-bottom: 265px;
 
   @media (min-width: $desktop-width) {
     @include null-margin;
@@ -21,7 +20,12 @@
 }
 
 .about-company__text {
-  padding-left: 15px;
+    padding-left: 2%;
+
+  @media (max-width: $tablet-width) {
+     @include null-padding;
+     padding-top: 50px;
+  }
 
   @media (min-width: $desktop-width) {
   }
@@ -99,7 +103,10 @@
 
 .about-company__text-wrapper {
     @include null-margin;
-    @include padding-left;
+     @include null-padding;
+
+  @media (max-width: $tablet-width) {
+  }
 }
 
 .about-company__image {

@@ -1,4 +1,5 @@
 .recomendations {
+  @include margin-left;
   @media (max-width: $tablet-width) {
     order: 5;
   }
@@ -6,18 +7,27 @@
 
 .recomendations__header {
   padding-left: 30px;
+  @include margin-from-header;
+  @include section-header;
+
+  @media (max-width: $tablet-width) {
+    padding-left: 15px;
+  }
 }
 
 .recomendations__list {
   @include cancel-list;
   margin-left: 0;
   padding-right: 0;
+    @include null-padding;
+
+  @media (max-width: $tablet-width) {
+  }
 }
 
 .recomendations__item {
   margin-bottom: 70px;
   border: 1px solid $white-color;
-  padding: 70px 0 0 0;
 
   &:hover {
     border: 1px solid #d6d6d6;
@@ -38,6 +48,10 @@
 .recomendations__item-text {
   margin-top: auto;
   margin-bottom: 20px;
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 10px;
+  }
 }
 
 .recomendations__item-sale {
@@ -81,6 +95,10 @@
 .recomendations__item-image {
   margin-bottom: 35px;
   height: 100%;
+
+  @media (max-width: $tablet-width) {
+    @include null-padding;
+  }
 
   @media (max-width: $mobile-width) {
     margin-bottom: 10px;
